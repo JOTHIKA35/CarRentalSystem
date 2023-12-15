@@ -1,0 +1,49 @@
+<div class="header" [ngClass]="{'change': isScrolled}">
+  <div class="navbar">
+    <div class="logo"><a href="#" class="logo"><span>LETS</span>&nbsp;GO</a></div>
+    <ul class="links">
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/aboutus">About Us</a></li>
+      <li><a routerLink="/carsearch">Book a Car</a></li>
+      <li><a routerLink="/contactus">Contact Us</a></li>
+    </ul>
+    <div class="login1">
+      <div class="login">
+        <a id="Login" routerLink="/login" (click)="capturePreviousUrl()" *ngIf="!authService.isLoggedIn()">Login</a>
+        <div class="profile"*ngIf="authService.isLoggedIn()">
+          <span (click)="toggleMenu()"><i class="fa-solid fa-user"></i></span>
+            <div class="sub-menu"  [class.open-menu]="isMenuOpen" id="menu">
+              <div class="menu">
+                <div class="user">
+                  <p>{{user.username}}</p>
+                  <p routerLink="/userorder">My Bookings</p>
+                </div>
+                <div class="logout">
+                 <p  (click)="logout()">Logout&nbsp;<i class="fa-solid fa-right-from-bracket"></i></p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="toggle_btn" (click)="onClickToggle()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+  <div class="dropdown">
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/aboutus">About Us</a></li>
+    <li><a routerLink="/carsearch">Book a Car</a></li>
+    <li><a routerLink="/contactus">Contact Us</a></li>
+    <li><a routerLink="/userorder">My Bookings</a></li>
+    <div class="login1">
+      <div class="login">
+        <a id="Login" routerLink="/login" (click)="capturePreviousUrl()" *ngIf="!authService.isLoggedIn()">Login</a>
+        <div class="profile"*ngIf="authService.isLoggedIn()">
+          <div class="logout">
+           <a  (click)="logout()">Logout&nbsp;<i class="fa-solid fa-right-from-bracket"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>

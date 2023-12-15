@@ -1,0 +1,123 @@
+
+  <app-navbar></app-navbar>
+
+<marquee> <i class="fa-sharp fa-solid fa-star"></i>&nbsp;Rent the car for more than 2 days --> 10% Discount&nbsp;<i class="fa-sharp fa-solid fa-star"></i> </marquee>
+<br><br><br>
+<div class="card" *ngIf="finalcardetails">
+  <div class="container">
+    <div class="card-info">
+      <img src="{{finalcardetails?.images}}">
+      <h1>{{finalcardetails.carname}}<br><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>&nbsp;{{finalcardetails.price}}&nbsp;/day</h1>
+    </div><hr>
+    <!-- <div class="title">Booking Details</div> -->
+
+    <div class="content">
+      <form (ngSubmit)="proceedToPayment()"  [formGroup]="form" >
+          <h3>Booking Details</h3>
+          <div class="user-details">
+        <div class="input-box"[ngClass]="{
+          'invalid': form.controls['pickupDate'].dirty && form.controls['pickupDate'].invalid,
+          'valid': form.controls['pickupDate'].dirty && form.controls['pickupDate'].valid
+        }">
+          <span class="details">Pickup Date</span>
+          <input type="datetime-local"   formControlName="pickupDate" (change)="calculateHours() "  [min]="minPickupDateTime()" [max]="maxPickupDateTime()">
+          <!-- <small >Please choose the date</small> -->
+        </div>
+        <div class="input-box" *ngIf="isPickupDateSelected"[ngClass]="{
+          'invalid': form.controls['dropoffDate'].dirty || form.controls['dropoffDate'].touched && form.controls['dropoffDate'].invalid,
+          'valid': form.controls['dropoffDate'].dirty && form.controls['dropoffDate'].valid
+        }">
+          <span class="details">Drop-off Date</span>
+          <input type="datetime-local"   formControlName="dropoffDate" (change)="calculateHours()"  [min]="minDropoffDateTime()">
+          <small *ngIf="form.controls['dropoffDate'].dirty && form.hasError('required','dropoffDate')">Please choose the date</small>
+        </div>
+        <div class="input-box"[ngClass]="{
+          'invalid': form.controls['pickupAddress'].dirty && form.controls['pickupAddress'].invalid,
+          'valid': form.controls['pickupAddress'].dirty && form.controls['pickupAddress'].valid
+        }">
+          <span class="details">Pickup Address</span>
+          <input type="text"  formControlName="pickupAddress"  >
+          <small *ngIf="form.controls['pickupAddress'].dirty && form.hasError('required','pickupAddress')">Please enter the address</small>
+          <small *ngIf="form.controls['pickupAddress'].errors?.['pattern']">Please enter valid address </small>
+        </div>
+        <div class="input-box"[ngClass]="{
+          'invalid': form.controls['dropoffAddress'].dirty && form.controls['dropoffAddress'].invalid,
+          'valid': form.controls['dropoffAddress'].dirty && form.controls['dropoffAddress'].valid
+        }">
+          <span class="details">Drop-off Address</span>
+          <input type="text"formControlName="dropoffAddress" >
+          <small *ngIf="form.controls['dropoffAddress'].dirty && form.hasError('required','dropoffAddress')">Please enter the address</small>
+          <small *ngIf="form.controls['dropoffAddress'].errors?.['pattern']">Please enter valid address </small>
+        </div>
+        </div>
+        <h3>Other Details</h3>
+        <div class="booking-details">
+        <div class="input-box1">
+          <!-- <span class="details">Driver Needed:</span> -->
+          <input class="choose" id="no"type="radio" value="no" formControlName="driverOption" (change)="calculateHours()" checked="checked">
+          <label for="no">Self Drive</label><br>
+          <input type="radio" id="yes" value="yes" formControlName="driverOption" (change)="calculateHours()">
+          <label for="yes">Drive Needed</label>
+        </div>
+
+        <!-- <div class="input-box">
+          <span class="details">Total Rental Cost:</span>
+          <span>{{rentalRate}}</span>
+        </div> -->
+        <!-- <div class="input-box1"> -->
+          <!-- <span class="details">Payment Method:</span> -->
+
+          <!-- <input class="choose"  id="cod"type="radio" value="cash" formControlName="paymentOption" (change)="calculateHours()"  checked="checked">
+          <label class="label label-1" for="cod"> Cash</label><br>
+          <input type="radio"  id="online"value="net" formControlName="paymentOption" (change)="calculateHours()">
+          <label class="label label-1" for="online">Net</label>
+        </div> -->
+
+        <!-- <div class="input-box">
+          <span class="details">Total Rental Price</span>
+          <input type="text" [value]="rentalRate| currency: 'INR'" formControlName="rentalRate" required>
+        </div> -->
+        <!-- <div class="input-box">
+          <span class="details">Total Rent:</span>
+          <input type="text" [value]="form.controls['totalRent'].value" formControlName="totalRent" readonly>
+        </div> -->
+        </div>
+        <!-- <div class="identity-details">
+        <div class="box">
+          <h3>Aadhar card/Pan card</h3>
+        <input class="file" type="file" id="myFile" formControlName="identityfile" name="filename" accept="image/*">
+
+      </div>
+      <div class="box">
+        <h3>Driving License</h3>
+      <input class="file" type="file" id="myFile" name="filename" formControlName="DrivingLicense" accept="image/*">
+    </div>
+        </div> -->
+        <h3>paymentOption</h3>
+        <div class="booking-details">
+        <div class="input-box1">
+          <input class="choose"  id="cash"type="radio" value="Cash On Delivery" formControlName="paymentOption" (change)="calculateHours()"  checked="checked">
+          <label for="cash"> Cash on delivery</label><br>
+          <input type="radio"  id="online"value="Online Payment" formControlName="paymentOption" (change)="calculateHours()">
+          <label  for="online">Online payement</label>
+        </div>
+        <small class="cash" *ngIf="isCashOnDeliverySelected()">*If you select cash on delivery, you must make an initial payment of Rs. 1000, which is refundable if the reservation is cancelled.*</small>
+        </div>
+      <div class="button">
+       <pre>Total Amount :</pre> <i class="fa-solid fa-indian-rupee-sign"></i>
+      <input type="text" [value]="rentalRate" formControlName="rentalRate" readonly>
+       <button type="submit">Pay {{ form.controls['totalRent'].value| currency: 'INR'|slice: 0:-3 }}</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<app-footerpart></app-footerpart>
+<app-copyrights></app-copyrights>

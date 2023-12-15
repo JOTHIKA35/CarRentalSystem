@@ -1,0 +1,10 @@
+.filter{
+ margin-top: -85px;
+ margin-left: 77%;
+}
+select{
+  padding: 10px 30px;
+}
+input[type="radio"]{
+  margin-left:10px;
+}

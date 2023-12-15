@@ -1,0 +1,36 @@
+<app-navbar></app-navbar><div class="container">
+  <h2 class="title">
+    order Details
+  </h2>
+  <div class="empty" *ngIf="bookings.length === 0">
+    <img src="assets/images/orders/no-order.png">
+    <br>
+    <p>Book a car for your Journey here</p><br>
+    <a routerLink="/carsearch">Search a Car</a>
+  </div>
+  <div class="bookingDetails" *ngFor="let booking of bookings ">
+  <div class="content-section">
+    <div class="card">
+      <div class="image">
+      <img [src]="booking.carinfo.images" alt="Car Brand">
+    </div>
+     <div class="content">
+      <h2>{{ booking.carinfo.carname }}</h2>
+      <div class="card-info">
+<div class="user">
+  <span>Booking ID:&nbsp;{{booking.id}}</span>
+        <span >Pickup date & time:&nbsp;{{booking.formDetails.pickupDate}}</span>
+      <span >Drop-off date & time:&nbsp;{{booking.formDetails.dropoffDate}}</span>
+      <span class="status">Status: {{ booking.userStatus }}</span>
+
+  </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="view" routerLink="/viewpage/{{booking.id}}">View</button>
+     </div>
+</div>
+</div>
+  </div>
+<app-footerpart></app-footerpart>
+<app-copyrights></app-copyrights>

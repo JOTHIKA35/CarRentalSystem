@@ -1,0 +1,9 @@
+
+<app-admin-navbar></app-admin-navbar>
+<h2>Booking Details</h2>
+<div class="Dashboard">
+  <a routerLink="/adminorder"><p>Pending Bookings<br><br><span>{{ pendingBookingsCount }}</span> </p></a>
+  <a routerLink="/admin-confirm"><p>Current Bookings <br> <br><span>{{ confirmedBookingsCount }}</span></p></a>
+  <a routerLink="/admin-expiry"><p>Expired Bookings <br> <br><span>{{ expiredBookingsCount }}</span></p></a>
+  <a routerLink="/admin-history"><p> Bookings History<br> <br><span>{{ expiredCancelledBookingsCount }}</span></p></a>
+</div>

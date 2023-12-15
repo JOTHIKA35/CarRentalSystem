@@ -1,0 +1,22 @@
+<input type="checkbox" name="checkbox" id="checkbox">
+<header>
+  <label for="checkbox"><i class="fa-solid fa-bars" id="bar"></i></label>
+  <div class="left_side">
+    <h3>Lets <span>Go</span></h3>
+  </div>
+  <div class="right_side">
+    <a (click)="logout()" class="logout">Logout&nbsp;<i class="fa-solid fa-right-from-bracket"></i></a>
+  </div>
+</header>
+<div class="sidebar">
+<div class="center">
+  <img src="https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png" class="profile">
+  <h4>Admin</h4>
+</div>
+<a routerLink="/adminhome"><i class="fa-solid fa-house-user"></i><span>Home</span></a>
+<a routerLink="/adminuserdeatils"><i class="fa-solid fa-user"></i> <span>User Details</span></a>
+<a routerLink="/view"><i class="fa-solid fa-car-side"></i><span>Car Details</span></a>
+<a routerLink="/admin-bookings"><i class="fa-solid fa-road-circle-check"></i><span>Booking Details</span></a>
+<!-- <a href="#"><i class="fa-solid fa-bars"></i> <span>settings</span></a> -->
+</div>
+

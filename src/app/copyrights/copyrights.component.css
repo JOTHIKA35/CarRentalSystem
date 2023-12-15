@@ -1,0 +1,12 @@
+.copyrights{
+  width: 100%;
+  background:rgb(88, 85, 85);
+  padding:10px 0px;
+  text-align: center;
+  color:#dad0d0;
+}
+@media(max-width:768px){
+  .copyrights{
+    padding: 8px 40px;
+  }
+}

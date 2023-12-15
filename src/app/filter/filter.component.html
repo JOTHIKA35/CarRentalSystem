@@ -1,0 +1,10 @@
+<div class="filter">
+  <span>Filter by location: </span>
+
+  <select [(ngModel)]="selectedRadioButton" (change)="onRadioButton()">
+    <option value="All">{{ 'Both' }}</option>
+    <option value="chennai">{{ 'Chennai' }}</option>
+    <option value="salem">{{ 'Salem' }}</option>
+  </select>
+
+</div>

@@ -1,0 +1,186 @@
+.header{
+ padding: 0 2rem;
+ /* background: rgba(0,0,0,0.6); */
+ background: rgba(238, 233, 233, 0.954);
+ box-shadow:0 20px 30px rgba(0,0,0,0.3);
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1000;
+ transition: all 0.3s;
+}
+li{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+  color:black;
+  font-size: 1.1rem;
+}
+a:hover
+{
+  color:rgb(63, 155, 253);
+}
+.navbar{
+  width:100%;
+  height:60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  font-size:1.8rem;
+  font-weight: bold;
+}
+.logo span{
+  color:rgb(63, 155, 253);
+}
+.logo span:hover{
+  color:black;
+}
+.navbar .links{
+  display: flex;
+  gap:2rem;
+}
+.navbar .toggle_btn
+{
+  color:#fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.login1{
+  display: flex;
+  gap:2rem;
+}
+.login a{
+    background-color: rgb(63, 155, 253);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition:scale 0.2 ease ;
+}
+.login a:hover
+{
+  scale:1.05;
+  color:white;
+}
+.dropdown{
+  display: none;
+  position:absolute;
+  right:2rem;
+  top: 60px;
+  height: 0;
+  width: 50%;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+.dropdown.open{
+  height: auto;
+}
+.dropdown a{
+  color: white;
+}
+.dropdown li{
+  padding:0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown .login1{
+  padding:0.7rem;
+}
+.dropdown .login{
+  padding-bottom: 0.5rem;
+}
+.dropdown .login1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.change{
+  background-color:rgb(1, 1, 58);
+  box-shadow:0 20px 30px rgba(0,0,0,0.3);
+}
+.change a{
+  color: #fff;
+}
+.change a:hover{
+  color:rgb(63, 155, 253);
+}
+.change span:hover{
+    color:white;
+}
+.change .login a:hover{
+     color: white;
+}
+.change .profile span{
+  border: 1px solid #fff;
+  color: #fff;
+}
+.profile span{
+  font-size:20px;
+  border: 1px solid rgb(1, 1, 58);
+  border-radius: 50%;
+ cursor: pointer;
+ width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-menu{
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 200px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  background-color:  rgb(204, 204, 204);
+  z-index:1000;
+}
+.open-menu{
+  max-height: 200px;
+}
+.menu p{
+  padding: 15px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media(max-width:845px){
+  .navbar .links,
+  .navbar .login1{
+    display: none;
+  }
+  .navbar .toggle_btn{
+    display: block;
+    color:black;
+  }
+  .dropdown{
+    display: block;
+    right: 0;
+    width: 100%;
+  }
+  .change .toggle_btn{
+    color:white;
+  }
+}
+@media(max-width:576px){
+  .dropdown{
+    right: 0;
+    width: 100%;
+  }
+}

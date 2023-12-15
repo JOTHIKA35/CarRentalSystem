@@ -1,0 +1,144 @@
+<app-admin-navbar></app-admin-navbar>
+  <div class=carform><div class="container">
+    <div class="heading">Add New Car</div>
+  <form [formGroup]="cardetails" (ngSubmit)="addcardetails()">
+    <div class="form firstpage">
+      <div class="car details">
+        <!-- <span class="title">Car Details</span> -->
+        <div class="input">
+          <div class="input-box">
+
+            <input type="number" formControlName="id" placeholder="Enter Car Id" >
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="carname"  placeholder="Enter Car Name" >
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="color" placeholder="Enter Car Color">
+          </div>
+          <div class="input-box">
+
+            <input type="number" formControlName="price" placeholder="Enter Rent Price" >
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="type" placeholder="Enter High/Low Price" >
+
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="Fuel" placeholder="Enter Fuel Type" >
+
+          </div>
+          <div class="input-box">
+
+            <input type="number" formControlName="seats" placeholder="Enter no of Seats">
+
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="Mileage" placeholder="Enter Milegae" >
+          </div>
+          <div class="input-box">
+
+            <input type="number" formControlName="tankcapacity" placeholder="Enter Tankcapacity of the car" >
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="images" placeholder="Enter the Image Url" >
+          </div>
+
+        <!-- </div> -->
+      <!-- </div> -->
+      <!-- <div class="car info">
+        <span class="title">Car Pictures and Features</span> -->
+        <!-- <div class="input"> -->
+          <div class="input-box">
+
+            <input type="text" formControlName="mainImage" placeholder="Enter Image Url" >
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="slideImage1" placeholder="Enter sliderImage picture Url" >
+          </div>
+
+          <div class="input-box">
+
+            <input type="text" formControlName="slideImage2" placeholder="Enter sliderImage picture Url" >
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="slideImage3" placeholder="Enter sliderImage picture Url">
+          </div>
+
+          <div class="input-box">
+
+            <input type="text" formControlName="slideImage4" placeholder="Enter sliderImage picture Url" >
+          </div>
+
+          <div class="input-box">
+
+            <input type="text" formControlName="slideImage5" placeholder="Enter sliderImage picture Url" >
+          </div>
+
+          <div class="input-box">
+
+            <input type="text" formControlName="slideImage6" placeholder="Enter sliderImage picture Url">
+          </div>
+
+          <div class="input-box">
+
+            <input type="text" formControlName="slideImage7" placeholder="Enter sliderImage picture Url" >
+          </div>
+
+          <div class="input-box">
+
+            <input type="text" formControlName="slideImage8" placeholder="Enter sliderImage picture Url" >
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="feature1" placeholder="Enter Car Feature">
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="feature2" placeholder="Enter Car Feature" >
+          </div>
+          <div class="input-box">
+
+            <input type="text"formControlName="feature3" placeholder="Enter Car Feature" >
+          </div>
+          <div class="input-box">
+
+            <input type="text"  formControlName="feature4" placeholder="Enter Car Feature" >
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="feature5" placeholder="Enter Car Feature" required>
+          </div>
+          <div class="input-box">
+
+            <input type="text" formControlName="location"  placeholder="Enter Car Feature" >
+          </div>
+        </div>
+        <div class="input-box">
+          <label>Disable</label><br>
+          <select name="disable" id="disable" formControlName="disable">
+            <option [ngValue]="true">true</option>
+            <option [ngValue]="false">false</option>
+          </select>
+        </div>
+        <div class="button">
+          <button class="firstbutton">
+            <span routerLink="/view" class="btn">Cancel</span>
+         </button>
+         <button class="firstbutton"[disabled]="!cardetails.valid">
+          <span class="btn">Add</span>
+       </button>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+  </div>

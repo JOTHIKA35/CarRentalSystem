@@ -1,0 +1,127 @@
+.carform{
+  min-height:100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 90px;
+  margin-left: 200px;
+}
+.container{
+  position: relative;
+  max-width: 1200px;
+  width:100%;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin: 0 15px;
+}
+.container .heading{
+   padding: 10px;
+  font-size:30px;
+  text-align: center;
+  color:rgb(1, 1, 58) ;
+}
+.container form{
+  position: relative;
+  margin-top:16px;
+  min-height: 450px;
+}
+.container form .car{
+  margin-top:2px;
+}
+/* .container form .title{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 6px 0;
+  color: 333;
+  display: inline;
+  margin-bottom: 8px;
+} */
+.container form .input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container form .input .input-box{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 5- 20px);
+}
+
+.input-box input{
+  height: 45px;
+  padding: 0 15px;
+  margin: 8px 0;
+  border: 1px solid gray;
+  outline:none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.input-box select{
+  height: 45px;
+  width:19%;
+  padding: 0 15px;
+  margin: 8px 0;
+  border: 1px solid gray;
+  outline:none;
+  border-radius: 5px;
+}
+.container form .car.info{
+  margin-top:10px;
+}
+.button{
+  margin-top: 10px;
+  display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+}
+button{
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 40px;
+  padding: 0 15px;
+  color:white;
+  font-size: 18px;
+  max-width: 200px;
+  width: 100%;
+  background-color: rgb(1, 1, 58);
+  margin: 30px 0;
+  cursor: pointer;
+}
+button:hover{
+  background-color:  rgb(81, 165, 255);
+  color: rgb(1, 1, 58);
+}
+/* .btns{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+} */
+/* .content
+{
+  margin-left: 250px;
+  color: red;
+  transition: 0.5s;
+}
+#checkbox:checked ~ .content{
+  margin-left: 60px;
+} */
+@media(max-width:750px){
+  .container form .input .input-box{
+    width: calc(100% / 3 - 20px);
+  }
+
+}
+@media(max-width:550px){
+  .container form .input .input-box{
+    width: 100%;
+  }
+  /* .container form{
+   overflow-y: scroll;
+   overflow-x: hidden;
+  } */
+}

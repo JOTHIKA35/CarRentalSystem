@@ -1,0 +1,59 @@
+<div><app-navbar></app-navbar></div>
+<br>
+<div>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <h1>Payment</h1>
+    <div class="input-box"[ngClass]="{
+      'invalid': form.controls['Name'].dirty && form.controls['Name'].invalid,
+      'valid': form.controls['Name'].dirty && form.controls['Name'].valid
+    }">
+    <input class="box" type="text" name="name" placeholder="Enter Name" formControlName="Name">
+  </div>
+    <small *ngIf="form.controls['Name'].invalid && (form.controls['Name'].dirty || form.controls['Name'].touched)">
+      Please enter a valid name containing only letters and spaces.
+    </small>
+    <div class="input-box"[ngClass]="{
+      'invalid': form.controls['email'].dirty && form.controls['email'].invalid,
+      'valid': form.controls['email'].dirty && form.controls['email'].valid
+    }">
+    <input class="box" type="email" name="email" placeholder="Enter Email" formControlName="email">
+    </div>
+    <small *ngIf="form.controls['email'].invalid && (form.controls['email'].dirty || form.controls['email'].touched)">
+      Please enter a valid email address.
+    </small>
+
+    <div class="input-box"[ngClass]="{
+      'invalid': form.controls['card'].dirty && form.controls['card'].invalid,
+      'valid': form.controls['card'].dirty && form.controls['card'].valid
+    }">
+    <input class="box" type="number" name="cardnumber" placeholder="1234 1234 1234 1234" formControlName="card"></div>
+    <small *ngIf="form.controls['card'].invalid && (form.controls['card'].dirty || form.controls['card'].touched)">
+      Please enter a valid 16-digit card number.
+    </small>
+
+    <div class="card">
+      <div class="card-input">
+        <label for="exp">Card Expiry month & year</label><br>
+        <input type="month" name="expmonth" placeholder="MM" formControlName="month" [min]="minExpiryMonth" ><br>
+        <small *ngIf="form.controls['month'].invalid && (form.controls['month'].dirty || form.controls['month'].touched)">
+          Please enter a valid card expiry month and year.
+        </small>
+      </div>
+
+      <div class="card-input">
+        <label for="CVV">CVV</label><br>
+        <input type="password" name="CVV" placeholder="CVV" formControlName="cvc"><br>
+        <small *ngIf="form.controls['cvc'].invalid && (form.controls['cvc'].dirty || form.controls['cvc'].touched)">
+          Please enter a valid 3-digit CVV number.
+        </small>
+      </div>
+    </div>
+
+    <div class="button">
+      <button type="button" (click)="onCancel()">Cancel</button>
+      <button type="submit" [disabled]="form.invalid">Pay</button>
+    </div>
+  </form>
+</div>
+<app-footerpart></app-footerpart>
+<app-copyrights></app-copyrights>

@@ -1,0 +1,106 @@
+.bookingDetails{
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 25px;
+  color:  rgb(1, 1, 58);
+}
+.content-section
+{
+  max-width: 100%;
+  width: 55%;
+  margin-left: 25%;
+}
+.empty img{
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  margin-left: 38%;
+}
+.empty p{
+  margin-left: 40%;
+  font-size: 20px;
+  color: grey;
+}
+.empty a{
+  margin-left: 45%;
+ margin-top:200px ;
+  padding: 8px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(1, 1, 58) ;
+  border-radius: 5px;
+
+}
+.content-section img{
+    max-width: 350px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    padding: 20px;
+}
+.content{
+  margin-left: 30px;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #fcfcfc;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 40px 0 10px 0px;
+  margin-left: -40px;
+  /* box-shadow: 5px 10px 18px #888888; */
+  box-shadow:0 20px 30px rgba(0,0,0,0.3);
+}
+/* .content{
+  display: flex;
+} */
+.card-info{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin-top: 10px;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.content h2 {
+  margin-top: 15px;
+}
+.status{
+   color: rgb(247, 114, 114);
+}
+.card-footer button{
+    font-weight:600;
+    color: rgb(1, 1, 58);
+    width:200px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #e2f0ff;
+    border:solid 1px black;
+    cursor: pointer;
+}
+.card-footer button:hover{
+  background: #c2e0ff;
+  border:solid 1px black;
+}
+.view{
+  margin-left: 190%;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,139 @@
+<div class="main"><app-navbar></app-navbar>
+  <div class="title">
+    LETS GO CAR RENTAL SERVICE
+  </div>
+</div>
+<br>
+<div class="title1">
+  <h1><a href="#">LETS GO</a></h1>
+  <div class="about">
+    <div class="content">
+      <p>
+        LetsGo car rental services is a online car rental system offers you to
+        reserve and rent a car online for a certain period of time.This car rental services
+        is to automate vehicle rental and reservation so that you don't
+        have to waste time calling and waiting for a vehicle. To convert the
+        manual car rental procedure into a digital method.
+      </p>
+    </div>
+    <div class="img1" *ngFor="let image of homeimage">
+      <img src="{{image.image}}">
+    </div>
+  </div>
+</div>
+<div class="cars">
+  <h1><a routerLink="/carsearch">Available Cars With Us</a></h1>
+  <div class="cars-pictures">
+    <div class="pictures" *ngFor="let item of carList">
+      <img src="{{item.image}}" alt="{{item.name}}">
+      <p>{{item.name}}</p>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="process">
+    <h1>Procedures To Grab Your Rental Car</h1>
+  </div>
+  <div class="process-card">
+    <div class="column">
+      <div class="card">
+        <div class="ion">
+          <i class="fa-solid fa-car"></i>
+        </div>
+        <h3>Book</h3>
+        <p>
+          search and book your rental car ,time and date.
+        </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="ion">
+          <i class="fa-sharp fa-solid fa-circle-check"></i>
+        </div>
+        <h3>Verify</h3>
+        <p>
+          Our team verify and confirm your bookings.
+        </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="ion">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <h3>Get</h3>
+        <p>
+          Get your rental car by verify the details at your preferred location.
+        </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="ion">
+          <i class="fa-solid fa-arrow-rotate-left"></i>
+        </div>
+        <h3>Return</h3>
+        <p>
+          Dropoff the car at your preferred location.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg">
+  <h1>Enjoy your trip</h1>
+</div>
+<div class="query">
+  <h2>Explore More About Us</h2>
+  <p>Feel free to ask your queries,We ready to clear the queries. </p>
+  <p class="call"><i class="fa-solid fa-phone"></i><a href="tel:12345678900">Ask your query</a></p>
+</div>
+<div class="choose">
+  <h1 class="heading">Why Should You Choose Our Lets Go</h1>
+  <div class="content1">
+    <div class="content-1">
+      <div class="service">
+        <img
+          src="assets/images/home/Availability_image.jpg"
+          alt="availability">
+        <h3>24*7 availability</h3>
+      </div>
+      <p>Call us any time in case of breakdown and recovery. An immediate free transfer service to your residence or a
+        replacement car is available.</p>
+    </div>
+    <div class="content-1">
+      <div class="service">
+        <img
+          src="assets/images/home/mileage.jpg"
+          alt="mileage">
+        <h3>Unlimited Mileage</h3>
+      </div>
+      <p>We offer you an unlimited mileage arrangement so feel free to drive as far as you want during your holidays or
+        business trip or vacation.</p>
+    </div>
+    <div class="content-1">
+      <div class="service">
+        <img
+          src="https://media.istockphoto.com/id/1085044072/vector/car-rental-reservation-vector-icon.jpg?s=612x612&w=0&k=20&c=N9Rljd6nJXgIFMeh_hKI2F4zPouOmPVAZyfZfZOrvUo="
+          alt="service">
+        <h3>Both Short and long term rentals</h3>
+      </div>
+      <p>If you want to rent the car for just a few hours or for an event which is ten days long, our services are
+        available for both.</p>
+    </div>
+    <div class="content-1">
+      <div class="service">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/002/599/426/non_2x/check-symbol-gradient-style-icon-free-vector.jpg"
+          alt="booking">
+        <h3>Easy Booking</h3>
+      </div>
+      <p>You don't have to spend your whole time in booking a rental car. With Lets GO easy booking and minimalistic
+        verification procedure, you can book a car within a minute. Rent a car and explore with your family and friends.
+      </p>
+    </div>
+  </div>
+</div>
+<app-footerpart></app-footerpart>
+<app-copyrights></app-copyrights>
