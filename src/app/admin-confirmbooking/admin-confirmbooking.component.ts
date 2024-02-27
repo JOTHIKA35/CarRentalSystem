@@ -18,12 +18,14 @@ export class AdminConfirmbookingComponent {
 
   fetchBookings(): void {
     this.adminService.getBookings().subscribe(bookings => {
-        if (bookings) {
-          this.bookings = bookings.filter(booking =>
-            booking.userStatus === 'Confirmed' || booking.status === 'Confirmed'
-          );
-        }
-      });
+      if (bookings) {
+        const today = new Date(); 
+        this.bookings = bookings.filter(booking =>
+          (booking.userStatus === 'Confirmed' || booking.status === 'Confirmed') &&
+          new Date(booking.formDetails.dropoffDate) >= today
+        );
+      }
+    });
   }
 }
 

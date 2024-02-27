@@ -26,6 +26,8 @@ import { AdminBookingsComponent } from './admin-bookings/admin-bookings.componen
 import { AdminConfirmbookingComponent } from './admin-confirmbooking/admin-confirmbooking.component';
 import { AdminExpirybookingsComponent } from './admin-expirybookings/admin-expirybookings.component';
 import { AdminBookinghistoryComponent } from './admin-bookinghistory/admin-bookinghistory.component';
+import { ConfirmReturnComponent } from './confirm-return/confirm-return.component';
+import { CurrentBookingComponent } from './current-booking/current-booking.component';
 // import { GuardGuard } from './guard.guard';
 
 const routes: Routes = [
@@ -121,6 +123,14 @@ const routes: Routes = [
   {
     path:'admin-history',
     component:AdminBookinghistoryComponent
+  },
+  {
+    path:'confirm-return/:check',
+    component:ConfirmReturnComponent
+  },
+  {
+    path:'current-booking/:check',
+    component:CurrentBookingComponent
   },
   {
     path:'userorder',

@@ -21,13 +21,13 @@
   <span>Booking ID:&nbsp;{{booking.id}}</span>
         <span >Pickup date & time:&nbsp;{{booking.formDetails.pickupDate}}</span>
       <span >Drop-off date & time:&nbsp;{{booking.formDetails.dropoffDate}}</span>
-      <span class="status">Status: {{ booking.status }}</span>
+      <!-- <span class="status">Status: {{ booking.status }}</span> -->
 
   </div>
     </div>
   </div>
   <div class="card-footer">
-    <button class="view"routerLink="/confirmpage/{{booking.id}}">View</button>
+    <button class="view"routerLink="/confirm-return/{{booking.id}}">View</button>
      </div>
 </div>
 </div>

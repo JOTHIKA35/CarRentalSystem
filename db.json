@@ -5,7 +5,8 @@
       "email": "admin@gmail.com",
       "phone": 9384540384,
       "password": "admin",
-      "role": "admin"
+      "role": "admin",
+      "id": "5b17"
     },
     {
       "username": "Jothika",
@@ -51,45 +52,63 @@
       "password": "Jothika@21",
       "cpassword": "Jothika@25",
       "id": 5
+    },
+    {
+      "username": "Mouni",
+      "email": "2k19cse058@kiot.ac.in",
+      "phone": 9384540384,
+      "address": "Attayampatty,Salem.",
+      "password": "Mouni@25",
+      "cpassword": "Mouni@25",
+      "id": 6
     }
   ],
   "homeimage": [
     {
-      "image": "https://royalpicks.in/wp-content/uploads/2020/01/Self-Drive-Car-Rental-Service-in-Chengalpattu-Chennai.png"
+      "image": "https://royalpicks.in/wp-content/uploads/2020/01/Self-Drive-Car-Rental-Service-in-Chengalpattu-Chennai.png",
+      "id": "df78"
     }
   ],
   "carbrands": [
     {
       "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Dzire-2020/7664/1584705998420/front-left-side-47.jpg?tr=w-456",
-      "name": "Maruti"
+      "name": "Maruti",
+      "id": "4778"
     },
     {
       "image": "https://www.drivespark.com/images/2018-05/2018-hyundai-creta-exterior-4.jpg",
-      "name": "Hyundai"
+      "name": "Hyundai",
+      "id": "2051"
     },
     {
       "image": "https://autohexa.com/wp-content/uploads/2020/06/1540456070603-1.jpg",
-      "name": "Ford Aspire"
+      "name": "Ford Aspire",
+      "id": "8785"
     },
     {
       "image": "https://images.livemint.com/img/2021/10/04/original/punch_2_1633332467674.jpg",
-      "name": "Tata"
+      "name": "Tata",
+      "id": "74fd"
     },
     {
       "image": "https://images.hindustantimes.com/auto/auto-images/mahindra/xuv700/exterior_mahindra-xuv700_front-left-side_600x400_01.jpg",
-      "name": "Mahindra"
+      "name": "Mahindra",
+      "id": "a3e4"
     },
     {
       "image": "https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/44709/fortuner-exterior-left-front-three-quarter.jpeg?q=75",
-      "name": "Toyota"
+      "name": "Toyota",
+      "id": "b243"
     },
     {
       "image": "https://www.financialexpress.com/wp-content/uploads/2022/10/Honda-City-5th-Gen-1.jpg?w=1024",
-      "name": "Honda"
+      "name": "Honda",
+      "id": "0e85"
     },
     {
       "image": "https://etimg.etb2bimg.com/photo/88893428.cms",
-      "name": "Kia"
+      "name": "Kia",
+      "id": "3eae"
     }
   ],
   "cardetails": [
@@ -175,7 +194,7 @@
       "feature4": "Power Steering",
       "feature5": "Anti Lock Braking System",
       "location": "salem",
-      "disable": true
+      "disable": false
     },
     {
       "carname": "Maruti Swift",
@@ -420,7 +439,7 @@
       "slideImage6": "https://stimg.cardekho.com/images/carinteriorimages/930x620/Maruti/Dzire/7664/1584706082668/gear-shifter-87.jpg?imwidth=890&impolicy=resize",
       "slideImage7": "https://stimg.cardekho.com/images/carinteriorimages/930x620/Maruti/Dzire/7664/1584706082668/upholstery-details-135.jpg?imwidth=890&impolicy=resize",
       "slideImage8": "https://img.indianautosblog.com/crop/398x223/2017/05/2017-Maruti-Dzire-taillamp-First-Drive-Review.jpg",
-      "tankcapacity": 37,
+      "tankcapacity": 38,
       "feature1": "Driver Airbag",
       "feature2": "Passenger Airbag",
       "feature3": "Air Conditioner",
@@ -433,35 +452,43 @@
   "brands": [
     {
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDb0Kfb15fG7IEYv-59oBYC9E1-RV1fxut1g&usqp=CAU",
-      "logoname": "Maruti"
+      "logoname": "Maruti",
+      "id": "b11a"
     },
     {
       "logo": "https://3dwarehouse.sketchup.com/warehouse/v1.0/content/public/5be2df80-a831-44eb-87bc-95a101c066da",
-      "logoname": "Hyundai"
+      "logoname": "Hyundai",
+      "id": "7758"
     },
     {
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK6fw7xbhK3knMkQurNTTdWwcBQqndeMF0-wEjbK3OKnalEffEjSeUpcCE29KgoFw1LaU&usqp=CAU",
-      "logoname": "Ford"
+      "logoname": "Ford",
+      "id": "9d2f"
     },
     {
       "logo": "https://companieslogo.com/img/orig/TATAMOTORS.NS-1c3e3e90.png?t=1668176380",
-      "logoname": "Tata"
+      "logoname": "Tata",
+      "id": "a3c8"
     },
     {
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTvRh7eYb8LgKdBqClEZeca99BVwG7CN41V_fIck_1V5_DTm8-7JO1l2NvYjSvz7yAL0&usqp=CAU",
-      "logoname": "Mahindra"
+      "logoname": "Mahindra",
+      "id": "526d"
     },
     {
       "logo": "https://global.toyota/pages/global_toyota/mobility/toyota-brand/emblem_ogp_001.png",
-      "logoname": "Toyota"
-    },
-    {
-      "logo": "https://freepngimg.com/download/temp_png/36643-1-honda-logo.jpeg",
-      "logoname": "Honda"
+      "logoname": "Toyota",
+      "id": "a80d"
     },
     {
       "logo": "https://cdn.iconscout.com/icon/free/png-256/kia-3166557-2641347.png",
-      "logoname": "Kia"
+      "logoname": "Honda",
+      "id": "d41b"
+    },
+    {
+      "logo": "https://cdn.iconscout.com/icon/free/png-256/kia-3166557-2641347.png",
+      "logoname": "Kia",
+      "id": "15d1"
     }
   ],
   "viewdetails": [
@@ -473,7 +500,8 @@
       "type": "High",
       "Fuel": "Petrol/CNG",
       "seats": 5,
-      "Mileage": "23.26 - 24.12"
+      "Mileage": "23.26 - 24.12",
+      "id": "20e2"
     },
     {
       "carname": "Maruthi suzuki",
@@ -483,7 +511,8 @@
       "type": "High",
       "Fuel": "Petrol/CNG",
       "seats": 5,
-      "Mileage": "23.26 - 24.12"
+      "Mileage": "23.26 - 24.12",
+      "id": "6013"
     }
   ],
   "bookings": [
@@ -634,8 +663,8 @@
         "disable": false
       },
       "date": "2023-08-09T18:48:56.992Z",
-      "status": "Confirmed",
-      "userStatus": "Confirmed",
+      "status": "Expired",
+      "userStatus": "Expired",
       "user": {
         "username": "Jothika",
         "email": "2k19cse035@kiot.ac.in",
@@ -687,8 +716,8 @@
         "disable": false
       },
       "date": "2023-08-31T15:50:17.185Z",
-      "status": "Confirmed",
-      "userStatus": "Confirmed",
+      "status": "Cancelled",
+      "userStatus": "Cancelled",
       "user": {
         "username": "Jothika",
         "email": "2k19cse049@kiot.ac.in",
@@ -750,6 +779,112 @@
         "password": "Jothikalk@25",
         "cpassword": "Jothika@25",
         "id": 1
+      }
+    },
+    {
+      "id": "981461-1704361497339",
+      "formDetails": {
+        "pickupDate": "2024-01-06T15:14",
+        "dropoffDate": "2024-01-17T15:14",
+        "pickupAddress": "123/street",
+        "dropoffAddress": "123/street",
+        "rentalRate": 25300,
+        "driverOption": "yes",
+        "paymentOption": "Online Payment",
+        "totalRent": 25300
+      },
+      "carinfo": {
+        "carname": "Hyundai Creta",
+        "color": "Orange",
+        "images": "https://www.drivespark.com/images/2018-05/2018-hyundai-creta-exterior-4.jpg",
+        "price": 2000,
+        "type": "Low",
+        "Fuel": "Diesel/Petrol",
+        "seats": 5,
+        "Mileage": 16.8,
+        "id": 2,
+        "mainImage": "https://www.drivespark.com/images/2018-05/2018-hyundai-creta-exterior-4.jpg",
+        "slideImage1": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20210726064827_Maruti_Dzire_red.jpg&w=700&q=90&c=1",
+        "slideImage2": "https://imgd-ct.aeplcdn.com/664x415/ec/34/01/17785/img/ol/Maruti-Suzuki-Swift-Dzire-Facelift-Interior-48155.jpg?v=201711021421&q=75",
+        "slideImage3": "https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/54399/swift-exterior-orvm-blinker.jpeg?q=75",
+        "slideImage4": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=http%3A%2F%2Fcdni.autocarindia.com%2FReviews%2F2020-Maruti-Dzire-dashboard.jpg&c=0",
+        "slideImage5": "https://stimg.cardekho.com/images/carinteriorimages/930x620/Maruti/Dzire/7664/1584706082668/instrument-cluster-62.jpg?imwidth=890&impolicy=resize",
+        "slideImage6": "https://stimg.cardekho.com/images/carinteriorimages/930x620/Maruti/Dzire/7664/1584706082668/gear-shifter-87.jpg?imwidth=890&impolicy=resize",
+        "slideImage7": "https://stimg.cardekho.com/images/carinteriorimages/930x620/Maruti/Dzire/7664/1584706082668/upholstery-details-135.jpg?imwidth=890&impolicy=resize",
+        "slideImage8": "https://img.indianautosblog.com/crop/398x223/2017/05/2017-Maruti-Dzire-taillamp-First-Drive-Review.jpg",
+        "tankcapacity": 37,
+        "feature1": "Driver Airbag",
+        "feature2": "Passenger Airbag",
+        "feature3": "Air Conditioner",
+        "feature4": "Power Steering",
+        "feature5": "Anti Lock Braking System",
+        "location": "salem",
+        "disable": false
+      },
+      "date": "2024-01-04T09:44:57.339Z",
+      "status": "Expired",
+      "userStatus": "Expired",
+      "user": {
+        "username": "kavitha",
+        "email": "2k19cse043@kiot.ac.in",
+        "phone": "9894022156",
+        "address": "5/123, xyz street , salem-637504",
+        "password": "kavi@bts7",
+        "cpassword": "kavi@bts7",
+        "id": 3
+      }
+    },
+    {
+      "id": "190058-1704437250804",
+      "formDetails": {
+        "pickupDate": "2024-01-06T12:15",
+        "dropoffDate": "2024-01-09T12:16",
+        "pickupAddress": "1/123,street",
+        "dropoffAddress": "1/123,street",
+        "rentalRate": 5551,
+        "driverOption": "yes",
+        "paymentOption": "Online Payment",
+        "totalRent": 5551
+      },
+      "carinfo": {
+        "carname": "Maruti Swift",
+        "color": "Solid Fire Red",
+        "images": "https://navbharattimes.indiatimes.com/thumb/75772211/maruti-officially-reveals-swift-2020-facelift-pictures-75772211.jpg?imgsize=51166&width=540&height=405&resizemode=75",
+        "price": 1500,
+        "type": "Low",
+        "Fuel": "CNG/Petrol",
+        "seats": "5",
+        "Mileage": "23.2 - 23.76",
+        "id": 4,
+        "mainImage": "https://navbharattimes.indiatimes.com/thumb/75772211/maruti-officially-reveals-swift-2020-facelift-pictures-75772211.jpg?imgsize=51166&width=540&height=405&resizemode=75",
+        "slideImage1": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20210726064827_Maruti_Dzire_red.jpg&w=700&q=90&c=1",
+        "slideImage2": "https://imgd-ct.aeplcdn.com/664x415/ec/34/01/17785/img/ol/Maruti-Suzuki-Swift-Dzire-Facelift-Interior-48155.jpg?v=201711021421&q=75",
+        "slideImage3": "https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/54399/swift-exterior-orvm-blinker.jpeg?q=75",
+        "slideImage4": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=http%3A%2F%2Fcdni.autocarindia.com%2FReviews%2F2020-Maruti-Dzire-dashboard.jpg&c=0",
+        "slideImage5": "https://stimg.cardekho.com/images/carinteriorimages/930x620/Maruti/Dzire/7664/1584706082668/instrument-cluster-62.jpg?imwidth=890&impolicy=resize",
+        "slideImage6": "https://stimg.cardekho.com/images/carinteriorimages/930x620/Maruti/Dzire/7664/1584706082668/gear-shifter-87.jpg?imwidth=890&impolicy=resize",
+        "slideImage7": "https://stimg.cardekho.com/images/carinteriorimages/930x620/Maruti/Dzire/7664/1584706082668/upholstery-details-135.jpg?imwidth=890&impolicy=resize",
+        "slideImage8": "https://img.indianautosblog.com/crop/398x223/2017/05/2017-Maruti-Dzire-taillamp-First-Drive-Review.jpg",
+        "tankcapacity": 37,
+        "feature1": "Driver Airbag",
+        "feature2": "Passenger Airbag",
+        "feature3": "Air Conditioner",
+        "feature4": "Power Steering",
+        "feature5": "Anti Lock Braking System",
+        "location": "chennai",
+        "disable": false
+      },
+      "date": "2024-01-05T06:47:30.804Z",
+      "status": "Expired",
+      "userStatus": "Expired",
+      "user": {
+        "username": "kavitha",
+        "email": "2k19cse043@kiot.ac.in",
+        "phone": "9894022156",
+        "address": "5/123, xyz street , salem-637504",
+        "password": "kavi@bts7",
+        "cpassword": "kavi@bts7",
+        "id": 3
       }
     }
   ]

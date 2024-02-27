@@ -10,7 +10,7 @@ import { LoggerService } from '../logger.service';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  // styles:[`input.ng-invalid{border :2px solid red;} input.ng-valid{border-left:2px solid green;}`
+  // styles:[`input.ng-invalid{border :2px solid red;} input.ng-valid{border-left:2px solid green;}`]
 
 })
 export class LoginComponent implements OnInit {

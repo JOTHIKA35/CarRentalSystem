@@ -60,9 +60,9 @@
 </table>
 
     <div class="card-footer">
-      <button *ngIf="bookingdetail.userStatus !== 'Cancelled'&& bookingdetail.userStatus !== 'Expired'"(click)="cancelBooking(bookingdetail.id, bookingdetail.carinfo.id)" >Cancel the Booking</button>
-      <button *ngIf="bookingdetail.userStatus !== 'Cancelled'&& bookingdetail.userStatus !== 'Expired'" (click)="confirmBooking(bookingdetail.id, bookingdetail.carinfo.id)" >Confirm the Booking</button>
-      <!-- <button *ngIf="bookingdetail.userStatus !== 'Cancelled' && bookingdetail.userStatus !== 'Expired'" (click)="returnBooking(bookingdetail.id, bookingdetail.carinfo.id)">Returned</button> -->
+      <!-- <button *ngIf="bookingdetail.userStatus !== 'Cancelled'&& bookingdetail.userStatus !== 'Expired'"(click)="cancelBooking(bookingdetail.id, bookingdetail.carinfo.id)" >Cancel the Booking</button>
+      <button *ngIf="bookingdetail.userStatus !== 'Cancelled'&& bookingdetail.userStatus !== 'Expired'" (click)="confirmBooking(bookingdetail.id, bookingdetail.carinfo.id)" >Confirm the Booking</button> -->
+      <button *ngIf="bookingdetail.userStatus !== 'Cancelled' && bookingdetail.userStatus !== 'Expired'" (click)="returnBooking(bookingdetail.id, bookingdetail.carinfo.id)">Returned</button>
        </div>
   </div>
 </div>

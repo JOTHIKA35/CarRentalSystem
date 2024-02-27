@@ -23,7 +23,11 @@ export class AdminBookingsComponent {
         this.bookings = bookings;
 
         this.pendingBookingsCount = this.bookings.filter(booking => booking.status === 'Yet to Confirm').length;
-        this.confirmedBookingsCount = this.bookings.filter(booking => booking.userStatus === 'Confirmed').length;
+        this.confirmedBookingsCount = this.bookings.filter(booking =>
+          booking.userStatus === 'Confirmed' &&
+          new Date(booking.formDetails.dropoffDate) >= new Date()
+        ).length;
+
 
         const today = new Date();
         this.expiredBookingsCount = bookings.filter(booking =>

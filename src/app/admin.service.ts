@@ -68,4 +68,6 @@ export class AdminService {
   updateCarDetailsEnableStatus(carId: number): Observable<any> {
     return this.http.patch<any>(`${this.apiUrl}/cardetails/${carId}`, { disable: false });
   }
+
+  
 }

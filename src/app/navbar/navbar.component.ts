@@ -17,7 +17,7 @@ export class NavbarComponent {
     this.user = this.authService.getLoggedInUser();
   }
 
-  ngOnInit(): void {}
+  
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;

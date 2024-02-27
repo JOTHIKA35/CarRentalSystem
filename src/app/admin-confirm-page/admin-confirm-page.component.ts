@@ -54,12 +54,12 @@ export class AdminConfirmPageComponent {
       });
     });
   }
-  returnBooking(bookingId: string, carId: number): void {
-    this.adminService.updateBookingStatus(bookingId, 'Expired', 'Expired').subscribe(() => {
-      this.adminService.updateCarDetailsEnableStatus(carId).subscribe(() => {
-        this.fetchBookings();
-        this.router.navigate(['/admin-bookings']);
-      });
-    });
-  }
+  // returnBooking(bookingId: string, carId: number): void {
+  //   this.adminService.updateBookingStatus(bookingId, 'Expired', 'Expired').subscribe(() => {
+  //     this.adminService.updateCarDetailsEnableStatus(carId).subscribe(() => {
+  //       this.fetchBookings();
+  //       this.router.navigate(['/admin-bookings']);
+  //     });
+  //   });
+  // }
 }
