@@ -1,32 +1,30 @@
 <app-admin-navbar></app-admin-navbar>
 
 <div class="table">
-<div class="Heading">
-  <h1>User Details</h1>
-</div>
+  <div class="Heading">
+    <h1>User Details</h1>
+  </div>
 
-<div class="table_section">
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>UserName</th>
-      <th>Email</th>
-      <th>Phone number</th>
-      <th>Password</th>
-    </tr>
-  </thead>
-  <tbody *ngFor="let Details of userdetails">
-    <tr>
-       <td>{{Details.id}}</td>
-       <td>{{Details.username}}</td>
-       <td>{{Details.email}}</td>
-       <td>{{Details.phone}}</td>
-       <td>{{Details.password}}</td>
-      </tr>
-  </tbody>
-</table>
+  <div class="table_section">
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>UserName</th>
+          <th>Email</th>
+          <th>Phone number</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let Details of userdetails">
+        <tr>
+          <td>{{Details.id}}</td>
+          <td>{{Details.username}}</td>
+          <td>{{Details.email}}</td>
+          <td>{{Details.phone}}</td>
+          <td>{{Details.password}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-</div>
-
-

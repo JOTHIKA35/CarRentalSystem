@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-admin-home',
   templateUrl: './admin-home.component.html',
-  styleUrls: ['./admin-home.component.css']
+  styleUrls: ['./admin-home.component.css'],
 })
 export class AdminHomeComponent {
   cardetailsCount: number = 0;
@@ -18,17 +18,25 @@ export class AdminHomeComponent {
   }
 
   fetchCounts() {
-    this.http.get<any>(`${environment.apiUrl}/cardetails`).subscribe(cardetails => {
-      this.cardetailsCount = cardetails.length;
-    });
+    this.http
+      .get<any>(`${environment.apiUrl}/cardetails`)
+      .subscribe((cardetails) => {
+        this.cardetailsCount = cardetails.length;
+      });
 
-    this.http.get<any>(`${environment.apiUrl}/bookings`).subscribe(bookings => {
-      this.bookingsCount = bookings.length;
-    });
+    this.http
+      .get<any>(`${environment.apiUrl}/bookings`)
+      .subscribe((bookings) => {
+        this.bookingsCount = bookings.length;
+      });
 
-    this.http.get<any>(`${environment.apiUrl}/registeredUser`).subscribe(users => {
-      // Filter out users with the "admin" role
-      this.registeredUserCount = users.filter((user: { role: string; }) => user.role !== 'admin').length;
-    });
+    this.http
+      .get<any>(`${environment.apiUrl}/registeredUser`)
+      .subscribe((users) => {
+        // Filter out users with the "admin" role
+        this.registeredUserCount = users.filter(
+          (user: { role: string }) => user.role !== 'admin'
+        ).length;
+      });
   }
 }

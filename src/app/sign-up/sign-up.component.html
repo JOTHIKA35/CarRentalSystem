@@ -1,71 +1,80 @@
-  <app-navbar></app-navbar>
+<app-navbar></app-navbar>
 <div class="container">
   <div class="wrapper">
     <div class="title">Signup To Continue</div>
     <form [formGroup]="signupform" (ngSubmit)="signup()">
-      <div class="box"[ngClass]="{
+      <div class="box" [ngClass]="{
         'invalid': signupform.controls['username'].dirty && signupform.controls['username'].invalid,
         'valid': signupform.controls['username'].dirty && signupform.controls['username'].valid
       }">
         <i class="fa fa-user"></i>
         <input type="text" placeholder="Enter Username" id="email" name="email" formControlName="username" required>
-        <small *ngIf="signupform.controls['username'].dirty && signupform.hasError('required','username')">Please enter username</small>
+        <small *ngIf="signupform.controls['username'].dirty && signupform.hasError('required','username')">Please enter
+          username</small>
         <!-- <small *ngIf="signupform.controls['username'].invalid && signupform.controls['username'].touched"></small> -->
-              <!-- <small *ngIf="signupform.controls['username'].errors?.['required']">Please Enter Username</small> -->
-              <small *ngIf="signupform.controls['username'].errors?.['pattern']">Please enter valid username </small>
-            </div>
+        <!-- <small *ngIf="signupform.controls['username'].errors?.['required']">Please Enter Username</small> -->
+        <small *ngIf="signupform.controls['username'].errors?.['pattern']">Please enter valid username </small>
+      </div>
 
-      <div class="box"[ngClass]="{
+      <div class="box" [ngClass]="{
         'invalid': signupform.controls['email'].dirty && signupform.controls['email'].invalid,
         'valid': signupform.controls['email'].dirty && signupform.controls['email'].valid
       }">
         <i class="fa fa-envelope"></i>
         <input type="email" placeholder="Enter Your email" id="email" name="email" formControlName="email" required>
-        <small *ngIf="signupform.controls['email'].dirty && signupform.hasError('required','email')">Please enter Email Id</small>
+        <small *ngIf="signupform.controls['email'].dirty && signupform.hasError('required','email')">Please enter Email
+          Id</small>
         <small *ngIf="signupform.controls['email'].errors?.['pattern']">Please check the email id</small>
 
       </div>
-      <div class="box"[ngClass]="{
+      <div class="box" [ngClass]="{
         'invalid': signupform.controls['phone'].dirty && signupform.controls['phone'].invalid,
         'valid': signupform.controls['phone'].dirty && signupform.controls['phone'].valid
       }">
         <i class="fa fa-phone"></i>
-        <input type="number" placeholder="Enter Your mobile Number" id="phone" name="phone" formControlName="phone" required>
-        <small *ngIf="signupform.controls['phone'].dirty && signupform.hasError('required','phone')">Please enter mobile number</small>
+        <input type="number" placeholder="Enter Your mobile Number" id="phone" name="phone" formControlName="phone"
+          required>
+        <small *ngIf="signupform.controls['phone'].dirty && signupform.hasError('required','phone')">Please enter mobile
+          number</small>
         <small *ngIf="signupform.controls['phone'].errors?.['pattern']">please Enter 10 digit mobile number</small>
       </div>
-      <div class="box"[ngClass]="{
+      <div class="box" [ngClass]="{
         'invalid': signupform.controls['address'].dirty && signupform.controls['address'].invalid,
         'valid': signupform.controls['address'].dirty && signupform.controls['address'].valid
       }">
-      <i class="fa-solid fa-house"></i>
-        <input type="text" placeholder="Enter Your address" id="address" name="address" formControlName="address" required>
-        <small *ngIf="signupform.controls['address'].dirty && signupform.hasError('required','address')">Please enter your address</small>
+        <i class="fa-solid fa-house"></i>
+        <input type="text" placeholder="Enter Your address" id="address" name="address" formControlName="address"
+          required>
+        <small *ngIf="signupform.controls['address'].dirty && signupform.hasError('required','address')">Please enter
+          your address</small>
         <small *ngIf="signupform.controls['address'].errors?.['pattern']">Please Enter valid address</small>
       </div>
-      <div class="box"[ngClass]="{
+      <div class="box" [ngClass]="{
         'invalid': signupform.controls['password'].dirty && signupform.controls['password'].invalid,
         'valid': signupform.controls['password'].dirty && signupform.controls['password'].valid
       }">
         <i class="fas fa-lock"></i>
         <input type="password" id="password" name="password" placeholder="Create Password" formControlName="password"
           required>
-          <small *ngIf="signupform.controls['password'].dirty && signupform.hasError('required','password')">Please enter your password</small>
-              <small *ngIf="signupform.controls['password'].errors?.['pattern']">Password must be strong</small>
+        <small *ngIf="signupform.controls['password'].dirty && signupform.hasError('required','password')">Please enter
+          your password</small>
+        <small *ngIf="signupform.controls['password'].errors?.['pattern']">Password must be strong</small>
       </div>
-      <div class="box"[ngClass]="{
+      <div class="box" [ngClass]="{
         'invalid': signupform.controls['cpassword'].dirty && signupform.controls['cpassword'].invalid,
         'valid': signupform.controls['cpassword'].dirty && signupform.controls['cpassword'].valid
       }">
         <i class="fas fa-lock"></i>
-        <input type="password" id="cpassword" name="cpassword" placeholder="Confirm your Password" formControlName="cpassword"
-          required>
-          <small *ngIf="signupform.controls['cpassword'].errors?.['required'] && (signupform.controls['cpassword'].dirty || signupform.controls['cpassword'].touched)">
-            Please enter your password
-          </small>
-          <small *ngIf="signupform.controls['cpassword'].invalid && !signupform.controls['cpassword'].errors?.['required'] && signupform.controls['cpassword'].dirty">
-            Password does not match
-          </small>
+        <input type="password" id="cpassword" name="cpassword" placeholder="Confirm your Password"
+          formControlName="cpassword" required>
+        <small
+          *ngIf="signupform.controls['cpassword'].errors?.['required'] && (signupform.controls['cpassword'].dirty || signupform.controls['cpassword'].touched)">
+          Please enter your password
+        </small>
+        <small
+          *ngIf="signupform.controls['cpassword'].invalid && !signupform.controls['cpassword'].errors?.['required'] && signupform.controls['cpassword'].dirty">
+          Password does not match
+        </small>
       </div>
       <button type="submit">Register</button>
       <div class="signup">Already have an account? <a routerLink="/login">Login now</a></div>

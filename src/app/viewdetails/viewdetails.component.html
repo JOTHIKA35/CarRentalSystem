@@ -8,60 +8,60 @@
 <div class="card-wrapper">
   <div class="card">
     <div class="container">
-      <div class="img-container" >
+      <div class="img-container">
         <img src="{{finalcardetails.mainImage}}" id="preview">
         <div class="img-prev text-center">
-        <div class="img-slide active">
-          <img src="{{finalcardetails.slideImage1}}" appSlider>
+          <div class="img-slide active">
+            <img src="{{finalcardetails.slideImage1}}" appSlider>
+          </div>
+          <div class="img-slide">
+            <img src="{{finalcardetails.slideImage2}}" appSlider>
+          </div>
+          <div class="img-slide">
+            <img src="{{finalcardetails.slideImage3}}" appSlider>
+          </div>
+          <div class="img-slide">
+            <img src="{{finalcardetails.slideImage4}}" appSlider>
+          </div>
+          <div class="img-slide">
+            <img src="{{finalcardetails.slideImage5}}" appSlider>
+          </div>
+          <div class="img-slide">
+            <img src="{{finalcardetails.slideImage6}}" appSlider>
+          </div>
+          <div class="img-slide">
+            <img src="{{finalcardetails.slideImage7}}" appSlider>
+          </div>
+          <div class="img-slide">
+            <img src="{{finalcardetails.slideImage8}}" appSlider>
+          </div>
         </div>
-        <div class="img-slide">
-          <img src="{{finalcardetails.slideImage2}}" appSlider>
-        </div>
-        <div class="img-slide">
-          <img src="{{finalcardetails.slideImage3}}" appSlider>
-        </div>
-        <div class="img-slide">
-          <img src="{{finalcardetails.slideImage4}}" appSlider>
-        </div>
-        <div class="img-slide">
-          <img src="{{finalcardetails.slideImage5}}" appSlider>
-        </div>
-        <div class="img-slide">
-          <img src="{{finalcardetails.slideImage6}}" appSlider>
-        </div>
-        <div class="img-slide">
-          <img src="{{finalcardetails.slideImage7}}" appSlider>
-        </div>
-        <div class="img-slide">
-          <img src="{{finalcardetails.slideImage8}}" appSlider>
-        </div>
-      </div>
       </div>
     </div>
     <div class="car-content">
       <h2>{{finalcardetails.carname}}</h2>
       <h3><i class="fa fa-rupee"></i>{{finalcardetails.price}} /day</h3>
       <div class="content">
-          <div class="specifications">
+        <div class="specifications">
           <h4>Key Specifications</h4>
-      <p><i class="fa-solid fa-circle-check"></i>Milege -> {{finalcardetails.Mileage}} kmpl</p>
-      <p><i class="fa-solid fa-circle-check"></i>Fuel-type -> {{finalcardetails.Fuel}}</p>
-      <p><i class="fa-solid fa-circle-check"></i>Seats -> {{finalcardetails.seats}}seats</p>
-      <p><i class="fa-solid fa-circle-check"></i>Fuel Tank Capacity -> {{finalcardetails.tankcapacity}}</p>
-  </div>
-  <div class="features">
-      <h4>Key Features</h4>
-      <p><i class="fa-solid fa-circle-check"></i>{{finalcardetails.feature1}}</p>
-      <p><i class="fa-solid fa-circle-check"></i>{{finalcardetails.feature2}}</p>
-      <p><i class="fa-solid fa-circle-check"></i>{{finalcardetails.feature3}}</p>
-      <p><i class="fa-solid fa-circle-check"></i>{{finalcardetails.feature4}}</p>
-      <p><i class="fa-solid fa-circle-check"></i>{{finalcardetails.feature5}}</p>
-  </div>
-  </div>
-  <div class="buttons">
-  <a routerLink="/carsearch"><button>Go Back</button></a>
-  <a routerLink="/cardetails1/{{finalcardetails.id}}" ><button>Rent now</button></a>
-  </div>
+          <p><i class="fa-solid fa-circle-check"></i>Milege -> {{finalcardetails.Mileage}} kmpl</p>
+          <p><i class="fa-solid fa-circle-check"></i>Fuel-type -> {{finalcardetails.Fuel}}</p>
+          <p><i class="fa-solid fa-circle-check"></i>Seats -> {{finalcardetails.seats}}seats</p>
+          <p><i class="fa-solid fa-circle-check"></i>Fuel Tank Capacity -> {{finalcardetails.tankcapacity}}</p>
+        </div>
+        <div class="features">
+          <h4>Key Features</h4>
+          <p><i class="fa-solid fa-circle-check"></i>{{finalcardetails.feature1}}</p>
+          <p><i class="fa-solid fa-circle-check"></i>{{finalcardetails.feature2}}</p>
+          <p><i class="fa-solid fa-circle-check"></i>{{finalcardetails.feature3}}</p>
+          <p><i class="fa-solid fa-circle-check"></i>{{finalcardetails.feature4}}</p>
+          <p><i class="fa-solid fa-circle-check"></i>{{finalcardetails.feature5}}</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <a routerLink="/carsearch"><button>Go Back</button></a>
+        <a routerLink="/cardetails1/{{finalcardetails.id}}"><button>Rent now</button></a>
+      </div>
     </div>
   </div>
 </div>

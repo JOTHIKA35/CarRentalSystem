@@ -3,50 +3,54 @@
     CHOOSE THE BEST CAR FOR YOUR JOURNEY
   </div>
 </div>
-<marquee> <i class="fa-sharp fa-solid fa-star"></i>&nbsp;Rent the car for more than 2 days --> 10% Discount&nbsp;<i class="fa-sharp fa-solid fa-star"></i> </marquee>
+<marquee> <i class="fa-sharp fa-solid fa-star"></i>&nbsp;Rent the car for more than 2 days --> 10% Discount&nbsp;<i
+    class="fa-sharp fa-solid fa-star"></i> </marquee>
 <div class="title1">
   <h2>Available car brands</h2>
 </div>
 <div class="brand-card">
-<div class="cars-brands" >
-  <div class="brands" *ngFor="let brand of brands">
-  <img src="{{brand.logo}}" alt="{{brand.logoname}}">
-  <p>{{brand.logoname}}</p>
-</div>
-</div>
+  <div class="cars-brands">
+    <div class="brands" *ngFor="let brand of brands">
+      <img src="{{brand.logo}}" alt="{{brand.logoname}}">
+      <p>{{brand.logoname}}</p>
+    </div>
+  </div>
 </div>
 <div class="title">
-<h2>Search a Car for your ride</h2>
+  <h2>Search a Car for your ride</h2>
 </div>
 <app-searchbar (searchTextchanged)="onsearchtextEntered($event)"></app-searchbar>
 <app-filter (filterRadioButton)="onRadioButton($event)"></app-filter>
 <div class="searchfilter" *ngIf="searchPerformed && filteredCarDetails.length === 0">
-  <br><br><br><div class=ion>"&nbsp;<i class="fa fa-search"></i>&nbsp;"</div><p>Cars not Available</p> <br><br><br>
+  <br><br><br>
+  <div class=ion>"&nbsp;<i class="fa fa-search"></i>&nbsp;"</div>
+  <p>Cars not Available</p> <br><br><br>
 </div>
 <br><br>
-  <ng-container *ngFor="let carDetail of cardetails">
-    <!-- courseCountRadioButton === 'All' || courseCountRadioButton === course.type -->
-    <div class="container" *ngIf="searchText === '' || carDetail.carname.toLowerCase().includes(searchText.toLowerCase())">
-      <div class="filter" *ngIf="carscountRadioButton === 'All' || carscountRadioButton === carDetail.location">
-        <div class="card">
-         <div class="card-image">
-             <img src="{{carDetail.images}}">
-         </div>
-         <div class="card-info">
-             <h2>{{carDetail.carname}}</h2>
-             <span class="color">color: {{carDetail.color}}</span><br>
-             <span class="price"><i class="fa fa-rupee">&nbsp;</i>{{carDetail.price}}/day</span>
-             <span class="mileage"><i class="fa fa-tachometer"></i>&nbsp; {{carDetail.Mileage}} kmpl</span>
-             <span class="Fuel"><i class="fa-solid fa-gas-pump"></i>&nbsp;{{carDetail.Fuel}}</span>
-             <span class="seats"><i class="fa fa-car"></i>&nbsp;{{carDetail.seats}}seats</span>
-             <span class="deposit" style="color: red;">Partial deposit: Rs.1000/-</span>
-         </div>
-         <div class="card-footer">
-             <a routerLink="/cardetails/{{carDetail.id}}" class="button type">View More</a>
-         </div>
-       </div>
-       </div>
+<ng-container *ngFor="let carDetail of cardetails">
+  <!-- courseCountRadioButton === 'All' || courseCountRadioButton === course.type -->
+  <div class="container"
+    *ngIf="searchText === '' || carDetail.carname.toLowerCase().includes(searchText.toLowerCase())">
+    <div class="filter" *ngIf="carscountRadioButton === 'All' || carscountRadioButton === carDetail.location">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{carDetail.images}}">
+        </div>
+        <div class="card-info">
+          <h2>{{carDetail.carname}}</h2>
+          <span class="color">color: {{carDetail.color}}</span><br>
+          <span class="price"><i class="fa fa-rupee">&nbsp;</i>{{carDetail.price}}/day</span>
+          <span class="mileage"><i class="fa fa-tachometer"></i>&nbsp; {{carDetail.Mileage}} kmpl</span>
+          <span class="Fuel"><i class="fa-solid fa-gas-pump"></i>&nbsp;{{carDetail.Fuel}}</span>
+          <span class="seats"><i class="fa fa-car"></i>&nbsp;{{carDetail.seats}}seats</span>
+          <span class="deposit" style="color: red;">Partial deposit: Rs.1000/-</span>
+        </div>
+        <div class="card-footer">
+          <a routerLink="/cardetails/{{carDetail.id}}" class="button type">View More</a>
+        </div>
       </div>
+    </div>
+  </div>
 </ng-container>
 <app-footerpart></app-footerpart>
 <app-copyrights></app-copyrights>

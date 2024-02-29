@@ -1,4 +1,4 @@
-.table{
+.table {
   width: 100%;
   margin-top: 90px;
   margin-left: 300px;
@@ -6,9 +6,9 @@
   margin-bottom: 20px;
   text-align: center;
 }
-.Heading{
+.Heading {
   display: flex;
-  align-items:center;
+  align-items: center;
   padding: 20px;
 }
 /* .cars{
@@ -37,44 +37,45 @@ span{
   padding: 10px;
   cursor: pointer;
 } */
-table{
+table {
   border-collapse: collapse;
   margin-left: 20px;
   table-layout: fixed;
   border: 1px solid #dddddd;
 }
-.table_section{
+.table_section {
   overflow-x: auto;
 }
-thead th{
+thead th {
   font-size: 16px;
   padding: 20px 30px;
   background-color: #e2f0ff;
-  color:  rgb(0, 0, 134);
+  color: rgb(0, 0, 134);
   text-align: center;
 }
-th, td {
+th,
+td {
   border-bottom: 2px solid #dddddd;
   padding: 20px 30px;
   text-align: center;
 }
-table a{
+table a {
   text-decoration: none;
   color: black;
 }
-tr:hover td{
+tr:hover td {
   background-color: #e2f0ff;
 }
-.add{
+.add {
   margin-top: 90px;
 }
-.add a{
+.add a {
   text-decoration: none;
   background-color: rgb(4, 4, 97);
   color: white;
   padding: 20px;
 }
-img{
+img {
   max-width: 130px;
   width: 100%;
   max-height: 130px;
@@ -82,16 +83,14 @@ img{
   border-radius: 5px;
   border: 2px solid gray;
 }
-.content
-{
+.content {
   margin-left: 250px;
   transition: 0.5s;
 }
 /* #checkbox:checked ~table{
   margin-left:-100px;
 } */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   height: 5px;
-  width:4px;
+  width: 4px;
 }
-

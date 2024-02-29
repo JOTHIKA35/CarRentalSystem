@@ -3,22 +3,24 @@ n<app-navbar></app-navbar>
   <div class="wrapper">
     <div class="title">Welcome Back!!</div>
     <form [formGroup]="loginForm" (ngSubmit)="login()">
-      <div class="box"[ngClass]="{
+      <div class="box" [ngClass]="{
         'invalid': loginForm.controls['email'].dirty && loginForm.controls['email'].invalid,
         'valid': loginForm.controls['email'].dirty && loginForm.controls['email'].valid
       }">
         <i class="fa fa-envelope"></i>
         <input type="email" placeholder="Enter your registered email" id="email" name="email" formControlName="email">
-        <small *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">Please Enter Your email</small>
+        <small *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">Please Enter Your
+          email</small>
         <small *ngIf="loginForm.controls['email'].errors?.['pattern']">Please check the email id</small>
       </div>
-      <div class="box"[ngClass]="{
+      <div class="box" [ngClass]="{
         'invalid': loginForm.controls['password'].dirty && loginForm.controls['password'].invalid,
         'valid': loginForm.controls['password'].dirty && loginForm.controls['password'].valid
       }">
         <i class="fas fa-lock"></i>
         <input type="password" id="password" name="password" placeholder="Enter Password" formControlName="password">
-          <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">Please Enter Your Password</small>
+        <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">Please Enter
+          Your Password</small>
       </div>
       <div class="password"><a routerLink="/forgotpassword">Forgot password?</a></div>
       <button type="submit">Login</button>

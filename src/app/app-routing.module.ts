@@ -32,122 +32,123 @@ import { CurrentBookingComponent } from './current-booking/current-booking.compo
 
 const routes: Routes = [
   {
-    path:'',
-    component:HomeComponent
+    path: '',
+    component: HomeComponent,
   },
   {
-    path:'login',
-    component:LoginComponent
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path:'signup',
-    component:SignUpComponent
+    path: 'signup',
+    component: SignUpComponent,
   },
   {
-    path:'home',
-    component:HomeComponent
+    path: 'home',
+    component: HomeComponent,
   },
   {
-    path:'aboutus',
-    component:AboutUsComponent
+    path: 'aboutus',
+    component: AboutUsComponent,
   },
   {
-    path:'forgotpassword',
-    component:ForgotPasswordComponent
+    path: 'forgotpassword',
+    component: ForgotPasswordComponent,
   },
   {
-    path:'updatepassword',
-    component:UpdatePasswordComponent
+    path: 'updatepassword',
+    component: UpdatePasswordComponent,
   },
   {
-    path:'contactus',
-    component:ContactPageComponent
+    path: 'contactus',
+    component: ContactPageComponent,
   },
   {
-    path:'carsearch',
-    component:CarsearchingComponent
+    path: 'carsearch',
+    component: CarsearchingComponent,
   },
   {
-    path:'cardetails/:check',
-    component:ViewdetailsComponent
+    path: 'cardetails/:check',
+    component: ViewdetailsComponent,
   },
   {
-    path:'cardetails1/:check',
-    component:BookformComponent,
-    canActivate:[GuardGuard]
+    path: 'cardetails1/:check',
+    component: BookformComponent,
+    canActivate: [GuardGuard],
   },
   {
-    path:'Admin',
-    component:AdminNavbarComponent
+    path: 'Admin',
+    component: AdminNavbarComponent,
   },
   {
-    path:'update/:id',
-    component:AdminUpdateComponent
+    path: 'update/:id',
+    component: AdminUpdateComponent,
   },
   {
-    path:'view',
-    component:CarDetailsAdminComponent
+    path: 'view',
+    component: CarDetailsAdminComponent,
   },
   {
-    path:'addcars',
-    component:AddcarsComponent
+    path: 'addcars',
+    component: AddcarsComponent,
   },
   {
-    path:'adminhome',
-    component:AdminHomeComponent
+    path: 'adminhome',
+    component: AdminHomeComponent,
   },
   {
-    path:'adminuserdeatils',
-    component:AdminUserdetailsComponent
+    path: 'adminuserdeatils',
+    component: AdminUserdetailsComponent,
   },
   {
-    path:'payment',
-    component:PaymentComponent
+    path: 'payment',
+    component: PaymentComponent,
   },
   {
-    path:'adminorder',
-    component:AdminOrdersPageComponent
+    path: 'adminorder',
+    component: AdminOrdersPageComponent,
   },
   {
-    path:'admin-bookings',
-    component:AdminBookingsComponent
+    path: 'admin-bookings',
+    component: AdminBookingsComponent,
   },
   {
-    path:'admin-confirm',
-    component:AdminConfirmbookingComponent
+    path: 'admin-confirm',
+    component: AdminConfirmbookingComponent,
   },
   {
-    path:'admin-expiry',
-    component:AdminExpirybookingsComponent
+    path: 'admin-expiry',
+    component: AdminExpirybookingsComponent,
   },
   {
-    path:'admin-history',
-    component:AdminBookinghistoryComponent
+    path: 'admin-history',
+    component: AdminBookinghistoryComponent,
   },
   {
-    path:'confirm-return/:check',
-    component:ConfirmReturnComponent
+    path: 'confirm-return/:check',
+    component: ConfirmReturnComponent,
   },
   {
-    path:'current-booking/:check',
-    component:CurrentBookingComponent
+    path: 'current-booking/:check',
+    component: CurrentBookingComponent,
   },
   {
-    path:'userorder',
-    component:UserOrderComponent
+    path: 'userorder',
+    component: UserOrderComponent,
   },
-   {
-    path:'confirmpage/:check',
-    component:AdminConfirmPageComponent
-  } , {
-    path:'viewpage/:check',
-    component:OrderViewPageComponent
+  {
+    path: 'confirmpage/:check',
+    component: AdminConfirmPageComponent,
   },
-  { path: '**', redirectTo: '/home' }
+  {
+    path: 'viewpage/:check',
+    component: OrderViewPageComponent,
+  },
+  { path: '**', redirectTo: '/home' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

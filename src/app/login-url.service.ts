@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LoginUrlService {
-  constructor() { }
+  constructor() {}
   private previousUrl: string = '';
 
   setPreviousUrl(url: string): void {

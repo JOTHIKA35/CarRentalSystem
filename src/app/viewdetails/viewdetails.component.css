@@ -1,208 +1,204 @@
-.title{
-  padding-top:15%;
+.title {
+  padding-top: 15%;
   padding-left: 3%;
-  color:white;
+  color: white;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   font-size: 35px;
- font-weight: 600;
+  font-weight: 600;
 }
-.card-wrapper{
+.card-wrapper {
   border: 1px solid #888888;
   border-radius: 5px;
   box-shadow: 5px 10px 8px #888888;
   max-width: 1200px;
   margin-left: 10%;
 }
-.card{
+.card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-  grid-gap:5px;
+  grid-gap: 5px;
   margin-left: 5px;
 }
-.container{
-  width:500px;
-  height:620px;
+.container {
+  width: 500px;
+  height: 620px;
 }
-.img-container{
-  width:500px;
-  height:500px;
+.img-container {
+  width: 500px;
+  height: 500px;
   border-radius: 10px;
   margin: 20px 30px;
   border: 1px solid #000000;
 }
-.img-container img{
-  max-width:500px;
+.img-container img {
+  max-width: 500px;
   max-height: 500px;
   width: 100%;
-  height:100%;
+  height: 100%;
   border-radius: 3px;
 }
-.img-prev{
+.img-prev {
   display: flex;
   max-width: 500px;
 }
-.img-slide{
+.img-slide {
   /* display: inline-block;*/
   width: 100%;
   height: 70px;
-  margin:3px;
+  margin: 3px;
   padding: 1px;
-  border:2px solid grey;
-  border-radius:5px;
-  background-color:rgb(255, 255, 255);
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
   filter: brightness(90%);
-
 }
-.active{
-  border:2px solid rgb(0, 0, 0);
+.active {
+  border: 2px solid rgb(0, 0, 0);
   filter: brightness(100%);
 }
-.car-content{
-  padding:25px 5px 10px 5px ;
-
+.car-content {
+  padding: 25px 5px 10px 5px;
 }
-.car-content h2{
- font-size:30px;
- color:rgb(1, 31, 58);
- font-weight: 500;
- margin: 10px 0px;
-
+.car-content h2 {
+  font-size: 30px;
+  color: rgb(1, 31, 58);
+  font-weight: 500;
+  margin: 10px 0px;
 }
-.car-content h3{
-  font-size:25px;
-  color:red;
+.car-content h3 {
+  font-size: 25px;
+  color: red;
   font-weight: 500;
   padding: 10px 0px;
 }
-.car-content p{
-  padding:10px 5px 10px 2px;
+.car-content p {
+  padding: 10px 5px 10px 2px;
   font-size: 18px;
 }
-.car-content .content{
+.car-content .content {
   display: flex;
-  gap:20px;
+  gap: 20px;
 }
-.car-content .content h4{
+.car-content .content h4 {
   font-weight: 600;
   font-size: 20px;
-  padding-left:5px;
+  padding-left: 5px;
   padding-bottom: 5px;
 }
-.car-content i{
-  padding-right:5px;
+.car-content i {
+  padding-right: 5px;
 }
-.car-content .content i{
-  color:rgb(154, 186, 254);
+.car-content .content i {
+  color: rgb(154, 186, 254);
 }
-.buttons{
- display: flex;
- gap:20px;
- margin-top: 30px;
- margin-left:10px;
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
 }
-.buttons a{
+.buttons a {
   text-decoration: none;
 }
-.button2{
+.button2 {
   margin-left: 50px;
 }
-.buttons button{
-  width:210px;
-  height:50px;
-  font-size:20px;
-  color:white;
-  background:rgb(1, 1, 58);
+.buttons button {
+  width: 210px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background: rgb(1, 1, 58);
   cursor: pointer;
 }
-.buttons button:hover{
-    background: rgb(1, 1, 127);;
+.buttons button:hover {
+  background: rgb(1, 1, 127);
 }
-@media(max-width:1295px){
-  .card{
+@media (max-width: 1295px) {
+  .card {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
-    .img-container{
-      width:400px;
   }
-  .img-prev{
+  .img-container {
+    width: 400px;
+  }
+  .img-prev {
     display: flex;
     max-width: 700px;
   }
-  .car-content p{
-    padding:10px 0px;
+  .car-content p {
+    padding: 10px 0px;
     font-size: 18px;
   }
-  .buttons button{
+  .buttons button {
     width: 150px;
   }
 }
-@media(max-width:1024px){
-  .card{
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+@media (max-width: 1024px) {
+  .card {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
-  .img-container{
-    width:700px;
+  .img-container {
+    width: 700px;
+  }
+  .img-prev {
+    display: flex;
+    max-width: 700px;
+  }
+  .car-content p {
+    padding: 10px 0px;
+    font-size: 15px;
+  }
+  .buttons {
+    gap: 10px;
+  }
+  .buttons button {
+    width: 150px;
+  }
 }
-.img-prev{
-  display: flex;
-  max-width: 700px;
-}
-.car-content p{
-  padding:10px 0px;
-  font-size: 15px;
-}
-.buttons{
-  gap: 10px;
-}
-.buttons button{
-  width: 150px;
-}
-}
-@media(max-width:768px){
-  .card-wrapper{
+@media (max-width: 768px) {
+  .card-wrapper {
     margin: 20px;
   }
-  .img-container{
-    width:500px;
+  .img-container {
+    width: 500px;
+  }
 }
-}
-@media(max-width:595px){
-  .card-wrapper{
+@media (max-width: 595px) {
+  .card-wrapper {
     margin: 20px;
   }
-  .img-container{
-    width:400px;
+  .img-container {
+    width: 400px;
+  }
+  .car-content .content {
+    flex-direction: column;
+  }
+  .buttons {
+    gap: 10px;
+  }
+  .buttons button {
+    width: 150px;
+  }
 }
-.car-content .content {
-  flex-direction: column;
-}
-.buttons{
-  gap: 10px;
-}
-.buttons button{
-  width: 150px;
-}
-}
-@media(max-width:450px){
-  .card-wrapper{
+@media (max-width: 450px) {
+  .card-wrapper {
     width: 520px;
   }
 
-  .img-container{
-    width:380px;
+  .img-container {
+    width: 380px;
+  }
+  .car-content .content {
+    flex-direction: column;
+  }
+  .buttons {
+    gap: 10px;
+  }
+  .buttons button {
+    width: 150px;
+  }
 }
-.car-content .content {
-  flex-direction: column;
-}
-.buttons{
-  gap: 10px;
-}
-.buttons button{
-  width: 150px;
-}
-}
-

@@ -1,33 +1,32 @@
-.bookingDetails{
+.bookingDetails {
   display: flex;
   flex-wrap: wrap;
-  gap:10px;
+  gap: 10px;
 }
-.title{
+.title {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 100px;
   font-size: 25px;
-  color:  rgb(1, 1, 58);
+  color: rgb(1, 1, 58);
 }
-.content-section
-{
+.content-section {
   max-width: 100%;
   width: 55%;
   margin-left: 25%;
 }
-.content-section img{
-    max-width: 350px;
-    width: 100%;
-    max-height: 350px;
-    height: 100%;
-    padding: 20px;
+.content-section img {
+  max-width: 350px;
+  width: 100%;
+  max-height: 350px;
+  height: 100%;
+  padding: 20px;
 }
-.content{
+.content {
   margin-left: 30px;
 }
-.card{
+.card {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -38,16 +37,16 @@
   margin: 40px 0 10px 0px;
   margin-left: -40px;
   /* box-shadow: 5px 10px 18px #888888; */
-  box-shadow:0 20px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
 
-.card-info{
+.card-info {
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
   margin-top: 10px;
 }
-.user{
+.user {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -56,42 +55,42 @@
 .content h2 {
   margin-top: 15px;
 }
-.status{
-   color: rgb(247, 114, 114);
-   margin-top: 5px;
+.status {
+  color: rgb(247, 114, 114);
+  margin-top: 5px;
 }
-.empty img{
+.empty img {
   max-width: 400px;
   max-height: 400px;
   width: 100%;
   height: 100%;
   margin-left: 38%;
 }
-.empty p{
+.empty p {
   margin-left: 50%;
   font-size: 20px;
   color: grey;
 }
-.card-footer{
+.card-footer {
   margin-bottom: 30px;
   margin-left: 20px;
 }
-button{
-    font-weight:600;
-    color: rgb(1, 1, 58);
-    width:200px;
-    height: 50px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    background: #e2f0ff;
-    border:solid 1px black;
-    cursor: pointer;
+button {
+  font-weight: 600;
+  color: rgb(1, 1, 58);
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  background: #e2f0ff;
+  border: solid 1px black;
+  cursor: pointer;
 }
- button:hover{
+button:hover {
   background: #c2e0ff;
-  border:solid 1px black;
+  border: solid 1px black;
 }
-.view{
+.view {
   margin-left: 185%;
 }

@@ -1,82 +1,82 @@
-.title{
-  padding-top:15%;
+.title {
+  padding-top: 15%;
   padding-left: 3%;
-  color:white;
+  color: white;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   font-size: 35px;
- font-weight: 600;
+  font-weight: 600;
 }
-.title1{
-  margin:0px 3%;
+.title1 {
+  margin: 0px 3%;
 }
-.title1 h1{
+.title1 h1 {
   text-align: center;
   font-size: 30px;
 }
-.title1 h1 a{
+.title1 h1 a {
   text-decoration: none;
-  color:  rgb(1, 1, 58);
+  color: rgb(1, 1, 58);
 }
-.about{
+.about {
   display: flex;
 }
-.title1 .content{
+.title1 .content {
   font-size: 18px;
-  width:55%;
+  width: 55%;
   text-align: justify;
   margin-left: 40px;
   margin-top: 50px;
 }
-.title1 img{
-  width:100%;
+.title1 img {
+  width: 100%;
 }
-.cars h1{
+.cars h1 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
 }
-.cars a{
+.cars a {
   text-decoration: none;
-  color:  rgb(1, 1, 58);
+  color: rgb(1, 1, 58);
 }
-.cars{
+.cars {
   max-width: 100%;
   background-color: rgb(241, 241, 241);
 }
-.cars-pictures{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-grid-gap:15px;
-margin:0px 4%;
+.cars-pictures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px;
+  margin: 0px 4%;
 }
-.pictures{
+.pictures {
   border-radius: 10px;
   text-align: center;
   padding: 30px 10px;
 }
-.pictures img{
-  width:100%;
-  height:200px;
-  border:1px solid rgb(150, 144, 144);
+.pictures img {
+  width: 100%;
+  height: 200px;
+  border: 1px solid rgb(150, 144, 144);
   border-radius: 10px;
 }
-.pictures p{
-  padding:5px;
+.pictures p {
+  padding: 5px;
   text-align: center;
   font-size: 25px;
 }
-.section{
-  height:auto;
+.section {
+  height: auto;
   width: 100%;
   display: grid;
   place-items: center;
   margin: 2% 0;
 }
-.process-card{
+.process-card {
   display: flex;
   /* justify-content: flex-start; */
   flex-wrap: wrap;
@@ -84,110 +84,110 @@ margin:0px 4%;
   margin: 0 4%;
   margin-bottom: 2%;
 }
-.process h1{
+.process h1 {
   font-size: 30px;
   color: rgb(1, 1, 58);
-  margin:3% 0px 5% 0;
+  margin: 3% 0px 5% 0;
 }
-.column{
-width: 22%;
+.column {
+  width: 22%;
   /* padding:0px 10px 10px 10px; */
   text-align: center;
   margin: 10px 0;
   padding: 10px;
 }
-.card{
+.card {
   width: 100%;
-  height:100%;
-  padding:10px 8px;
+  height: 100%;
+  padding: 10px 8px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgb(173, 173, 173);
   border: 1px solid rgb(173, 173, 173);
 }
-.card h3{
+.card h3 {
   font-size: 20px;
   font-weight: 600;
-  margin:10px 0;
+  margin: 10px 0;
 }
-.card p{
+.card p {
   font-size: 15px;
   letter-spacing: 1px;
   text-align: justify;
 }
-.ion{
+.ion {
   font-size: 50px;
-  background-color:  rgb(1, 1, 58);
+  background-color: rgb(1, 1, 58);
   position: relative;
   margin: auto;
-  color:white;
+  color: white;
   height: 70px;
-  width:68px ;
+  width: 68px;
   border-radius: 50%;
   place-items: center;
 }
-.card:hover{
+.card:hover {
   box-shadow: 5px 5px 5px rgb(10, 109, 222);
 }
-.card:hover .ion{
+.card:hover .ion {
   background-color: rgb(10, 109, 222);
   box-shadow: 2px 2px 2px rgb(10, 109, 222);
 }
 
-.bg{
-  background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://wallpaperaccess.com/full/3497075.jpg);
-  background-size:cover;
+.bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://wallpaperaccess.com/full/3497075.jpg);
+  background-size: cover;
   background-position: bottom;
   overflow-x: hidden;
-
 }
-.bg h1{
-      margin: 130px 0px;
-      color:white;
-      text-align: center;
-      font-size: 45px;
-     font-weight: 800;
-  }
-  .query{
-    margin: -3% 20% 1% 20%;
-    padding: 20px 35px;
-    border:1px solid black;
-    border-style: dashed;
-    background-color:rgb(226, 239, 255);
-    box-shadow: 3px 3px 5px 6px #d1e8ff;
-  }
-  .query h2{
-    font-size: 28px;
-    text-align: center;
-    color: rgb(1, 1, 58);
-    padding:5px 0 10px 0;
-  }
-  .query p{
-    text-align: center;
-    padding:5px 0 10px 0;
-  }
-  .query .call{
-    background-color: rgb(255, 98, 98);
-    text-align: center;
-    border-radius: 20px;
-    margin:2% 0 2% 28%;
-    padding: 15px;
-    width:40%;
-  }
-  .query .call a{
-    text-decoration: none;
-    padding-left: 5px;
-    color: white;
-  }
-  .query .call i{
-    color: white;
-  }
-.heading{
+.bg h1 {
+  margin: 130px 0px;
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 800;
+}
+.query {
+  margin: -3% 20% 1% 20%;
+  padding: 20px 35px;
+  border: 1px solid black;
+  border-style: dashed;
+  background-color: rgb(226, 239, 255);
+  box-shadow: 3px 3px 5px 6px #d1e8ff;
+}
+.query h2 {
+  font-size: 28px;
+  text-align: center;
+  color: rgb(1, 1, 58);
+  padding: 5px 0 10px 0;
+}
+.query p {
+  text-align: center;
+  padding: 5px 0 10px 0;
+}
+.query .call {
+  background-color: rgb(255, 98, 98);
+  text-align: center;
+  border-radius: 20px;
+  margin: 2% 0 2% 28%;
+  padding: 15px;
+  width: 40%;
+}
+.query .call a {
+  text-decoration: none;
+  padding-left: 5px;
+  color: white;
+}
+.query .call i {
+  color: white;
+}
+.heading {
   font-size: 30px;
   text-align: center;
   margin-top: 5%;
-  color:  rgb(1, 1, 58);
+  color: rgb(1, 1, 58);
 }
-.content1{
+.content1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 30px;
@@ -195,103 +195,102 @@ width: 22%;
   margin: 0 4%;
   justify-content: space-around;
 }
-.service{
+.service {
   display: flex;
   align-items: center;
 }
-.content-1{
+.content-1 {
   border: 1px solid rgb(173, 173, 173);
   border-radius: 5px;
   padding: 20px;
   box-shadow: 5px 5px 5px rgb(173, 173, 173);
   text-align: center;
 }
-.content-1:hover{
+.content-1:hover {
   box-shadow: 5px 5px 5px rgb(10, 109, 222);
 }
-.content-1 h3{
-  color:rgb(1, 1, 58);
-  padding:15px 10px;
-
+.content-1 h3 {
+  color: rgb(1, 1, 58);
+  padding: 15px 10px;
 }
-.content-1 p{
+.content-1 p {
   color: gray;
   text-align: justify;
-  padding-top:25px;
+  padding-top: 25px;
   margin-bottom: 10px;
 }
-.content-1 img{
-  width:45%;
-  height:110px;
+.content-1 img {
+  width: 45%;
+  height: 110px;
 }
-@media(max-width:1040px){
-  .title{
-    padding-top:20%;
+@media (max-width: 1040px) {
+  .title {
+    padding-top: 20%;
     padding-left: 3%;
-}
-.title1 .content{
-  width: 90%;
-}
-.about{
-  flex-direction: column;
-}
-.column{
-  width: 100%;
-}
-.process-card{
-  flex-direction: column;
-  margin:0 3%;
- }
-.cars-pictures{
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-}
-@media(max-width:768px){
-  .title{
-    padding-top:30%;
-    padding-left: 3%;
-}
-.cars-pictures{
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.cars{
-    padding: 0px;
-}
-.about{
+  }
+  .title1 .content {
+    width: 90%;
+  }
+  .about {
     flex-direction: column;
+  }
+  .column {
+    width: 100%;
+  }
+  .process-card {
+    flex-direction: column;
+    margin: 0 3%;
+  }
+  .cars-pictures {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
-.title1 .content{
-    font-size: 18px;
-    width:85%;
-    margin-top: 10px;
-}
-.query .call{
-  width:50% ;
-}
-.query{
-  margin: -9% 20% 1% 20%;
-}
-}
-@media(max-width:530px){
-  .title{
-    padding-top:40%;
+@media (max-width: 768px) {
+  .title {
+    padding-top: 30%;
     padding-left: 3%;
+  }
+  .cars-pictures {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .cars {
+    padding: 0px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .title1 .content {
+    font-size: 18px;
+    width: 85%;
+    margin-top: 10px;
+  }
+  .query .call {
+    width: 50%;
+  }
+  .query {
+    margin: -9% 20% 1% 20%;
+  }
 }
-  .cars-pictures{
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    .content1{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      margin-left: 5%;
+@media (max-width: 530px) {
+  .title {
+    padding-top: 40%;
+    padding-left: 3%;
   }
-  .content-1{
-       height: auto;
+  .cars-pictures {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  .query .call{
-    width:60% ;
+  .content1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-left: 5%;
   }
-  .query{
+  .content-1 {
+    height: auto;
+  }
+  .query .call {
+    width: 60%;
+  }
+  .query {
     margin: -11% 20% 1% 20%;
   }
 }

@@ -1,21 +1,35 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
+import {
+  ActivatedRouteSnapshot,
+  CanActivate,
+  Router,
+  RouterStateSnapshot,
+  UrlTree,
+} from '@angular/router';
 import { Observable } from 'rxjs';
 import { LoginUrlService } from './login-url.service';
 import { AuthService } from './auth.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class GuardGuard implements CanActivate {
-
-  constructor(private router: Router, private slogin: AuthService,private previousUrlService: LoginUrlService) {}
+  constructor(
+    private router: Router,
+    private slogin: AuthService,
+    private previousUrlService: LoginUrlService
+  ) {}
   canActivate(
     next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      const isLoggedIn = this.slogin.isLoggedIn();
-      if (isLoggedIn) {
-        return true;
+    state: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree {
+    const isLoggedIn = this.slogin.isLoggedIn();
+    if (isLoggedIn) {
+      return true;
     }
 
     const targetUrl = state.url;

@@ -1,18 +1,18 @@
-form{
-    max-width: 550px;
-    width: 100%;
-    margin:70px auto 0 auto;
-    padding: 20px;
-    background: #fcfcfc;
-    box-shadow:0 20px 30px rgba(0,0,0,0.3);
+form {
+  max-width: 550px;
+  width: 100%;
+  margin: 70px auto 0 auto;
+  padding: 20px;
+  background: #fcfcfc;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
-h1{
+h1 {
   text-align: center;
 }
-input{
+input {
   margin: 10px 0px;
 }
-.box{
+.box {
   width: 100%;
   padding: 10px;
   outline: none;
@@ -22,13 +22,12 @@ input{
   margin: 10px 0px 10px 0;
 }
 
-.card
-{
+.card {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
-.card input{
+.card input {
   width: 100%;
   padding: 10px;
   outline: none;
@@ -37,14 +36,13 @@ input{
   font-size: 16px;
   margin: 10px 0px 10px 0;
 }
-.button
-{
+.button {
   display: flex;
   /* flex-wrap: wrap; */
   gap: 15px;
 }
 
-button{
+button {
   width: 100%;
   padding: 10px;
   outline: none;
@@ -56,30 +54,29 @@ button{
   background-color: rgb(1, 1, 58);
   color: white;
 }
-button:hover{
+button:hover {
   background: rgb(41, 3, 194);
 }
 /* .custom-swal-button {
   background-color: #c830d6 !important;
   color: #ffffff !important;
 } */
-.input-box{
+.input-box {
   display: flex;
-  gap:2px;
+  gap: 2px;
 }
-.card-input{
+.card-input {
   width: 48% !important;
 }
-small{
+small {
   color: red;
 }
 .invalid input {
-
   border-color: red;
 }
 
 .valid input {
-  border-color:  green;
+  border-color: green;
 }
 .invalid input[type="password"] {
   border-color: red;
@@ -105,31 +102,30 @@ small{
   display: block;
   color: red;
 }
-@media(max-width:695px){
-   form{
+@media (max-width: 695px) {
+  form {
     margin: 70px auto 0 auto;
     padding: 10px;
-   }
-   label{
+  }
+  label {
     margin-left: 20px;
-   }
-   .card input{
+  }
+  .card input {
     width: 90%;
     margin-left: 20px;
-   }
-   .box{
+  }
+  .box {
     width: 90%;
     margin-left: 20px;
-   }
-   .card
-{
-  display: block;
-}
-.button{
-  flex-direction: column;
-}
-.button{
-  width: 90%;
-  margin-left: 20px;
-}
+  }
+  .card {
+    display: block;
+  }
+  .button {
+    flex-direction: column;
+  }
+  .button {
+    width: 90%;
+    margin-left: 20px;
+  }
 }

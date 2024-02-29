@@ -3,16 +3,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 @Component({
   selector: 'app-searchbar',
   templateUrl: './searchbar.component.html',
-  styleUrls: ['./searchbar.component.css']
+  styleUrls: ['./searchbar.component.css'],
 })
 export class SearchbarComponent {
-  enteredSearchvalue:string='';
-
+  enteredSearchvalue: string = '';
 
   @Output()
-   searchTextchanged:EventEmitter<string>=new EventEmitter<string>();
+  searchTextchanged: EventEmitter<string> = new EventEmitter<string>();
 
-   onsearchTextchanged(){
-      this.searchTextchanged.emit(this.enteredSearchvalue);
-   }
+  onsearchTextchanged() {
+    this.searchTextchanged.emit(this.enteredSearchvalue);
+  }
 }

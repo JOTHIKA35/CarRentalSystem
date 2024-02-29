@@ -7,7 +7,7 @@ import { environment } from '../../environments/environment';
 @Component({
   selector: 'app-update-password',
   templateUrl: './update-password.component.html',
-  styleUrls: ['./update-password.component.css']
+  styleUrls: ['./update-password.component.css'],
 })
 export class UpdatePasswordComponent implements OnInit {
   public reset!: FormGroup;
@@ -26,8 +26,16 @@ export class UpdatePasswordComponent implements OnInit {
       this.userId = params['id'];
       this.reset = this.formBuilder.group(
         {
-          password:['',[Validators.required,Validators.pattern("^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$")]],
-          cpassword: ['', [Validators.required]]
+          password: [
+            '',
+            [
+              Validators.required,
+              Validators.pattern(
+                '^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$'
+              ),
+            ],
+          ],
+          cpassword: ['', [Validators.required]],
         },
         { validator: ConfirmedValidator('password', 'cpassword') }
       );
@@ -37,7 +45,10 @@ export class UpdatePasswordComponent implements OnInit {
   resetpass() {
     if (this.reset.valid) {
       const updatedPassword = this.reset.value.password;
-      this.http.patch<any>(`${this.apiUrl}/registeredUser/${this.userId}`, { password: updatedPassword })
+      this.http
+        .patch<any>(`${this.apiUrl}/registeredUser/${this.userId}`, {
+          password: updatedPassword,
+        })
         .subscribe(() => {
           alert('Password updated successfully');
           this.router.navigate(['/login']);

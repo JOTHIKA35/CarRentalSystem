@@ -1,4 +1,4 @@
-footer{
+footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -8,147 +8,149 @@ footer{
   padding: 50px 100px;
   background-color: rgb(1, 1, 58);
 }
-footer .lastcontainer{
+footer .lastcontainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-footer .lastcontainer .sec{
- margin-right: 30px;
+footer .lastcontainer .sec {
+  margin-right: 30px;
 }
-footer .lastcontainer .sec.aboutus{
-  width:30%;
+footer .lastcontainer .sec.aboutus {
+  width: 30%;
 }
-footer .lastcontainer h2{
+footer .lastcontainer h2 {
   position: relative;
-  color:white;
+  color: white;
   font-weight: 500;
   margin-bottom: 15px;
-
 }
-footer .lastcontainer h2:before{
-   content:'';
-   position:absolute;
-   bottom: -5px;
-   left:0;
-   width:50px;
-   height:2.5px;
-   background: rgb(30, 111, 224);
+footer .lastcontainer h2:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2.5px;
+  background: rgb(30, 111, 224);
 }
-footer .lastcontainer p{
-  color:rgb(153, 153, 153);
+footer .lastcontainer p {
+  color: rgb(153, 153, 153);
 }
-.links{
+.links {
   margin-top: 20px;
   display: flex;
 }
-.links li{
+.links li {
   list-style: none;
 }
-.links li a{
+.links li a {
   display: inline-block;
-  width:40px;
-  height:40px;
+  width: 40px;
+  height: 40px;
   background: rgb(88, 85, 85);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right:10px;
+  margin-right: 10px;
   text-decoration: none;
-  border-radius:5px;
+  border-radius: 5px;
 }
-.links li a:hover{
-  background:rgb(30, 111, 224);
+.links li a:hover {
+  background: rgb(30, 111, 224);
 }
-.links li a .fa-brands{
-  color:white;
+.links li a .fa-brands {
+  color: white;
   font-size: 20px;
 }
-.quicklinks ul li{
+.quicklinks ul li {
   list-style: none;
-  padding-top:10px;
+  padding-top: 10px;
 }
-.quicklinks ul li a{
-  color:rgb(153, 153, 153);
+.quicklinks ul li a {
+  color: rgb(153, 153, 153);
   text-decoration: none;
   margin-bottom: 10px;
 }
-.quicklinks ul li a:hover{
-   color:white;
+.quicklinks ul li a:hover {
+  color: white;
 }
-.contactus .info li{
+.contactus .info li {
   display: flex;
   margin-bottom: 16px;
 }
 
-.contactus .info li span:nth-child(1){
-  color:rgb(153, 153, 153);
+.contactus .info li span:nth-child(1) {
+  color: rgb(153, 153, 153);
   font-size: 20px;
   margin-right: 10px;
 }
-.contactus .info li{
-  color:rgb(153, 153, 153);
+.contactus .info li {
+  color: rgb(153, 153, 153);
 }
-.contactus .info li a{
-  color:rgb(153, 153, 153);
+.contactus .info li a {
+  color: rgb(153, 153, 153);
   text-decoration: none;
 }
 
-.contactus .info li a:hover{
+.contactus .info li a:hover {
   color: white;
 }
-.copyrights{
+.copyrights {
   width: 100%;
-  background:rgb(88, 85, 85);
-  padding:8px 100px;
+  background: rgb(88, 85, 85);
+  padding: 8px 100px;
   text-align: center;
-  color:#dad0d0;
+  color: #dad0d0;
 }
-.message .text{
-  color:white;
+.message .text {
+  color: white;
 }
-.btn button{
-  color:rgb(182, 205, 238);
-  background:rgb(16, 16, 177);
+.btn button {
+  color: rgb(182, 205, 238);
+  background: rgb(16, 16, 177);
 }
-.btn button:hover{
-   color:white;
-   cursor: pointer;
-   background:rgb(4, 131, 227);
+.btn button:hover {
+  color: white;
+  cursor: pointer;
+  background: rgb(4, 131, 227);
 }
 
-@media(max-width:768px){
-footer{
-  padding:40px;
-}
-footer .lastcontainer{
-  flex-direction: column;
-}
-footer .lastcontainer .sec{
-  margin-right: 0;
-  margin-bottom: 40px;
-}
-footer .lastcontainer .sec.aboutus,.quicklinks,.contactus{
-  width: 100%;
-}
-.copyrights{
-
-  padding: 8px 40px;
-}
-}
-@media(max-width:360px){
-  footer{
-      padding:10px;
+@media (max-width: 768px) {
+  footer {
+    padding: 40px;
   }
-  footer .lastcontainer{
-      flex-direction: column;
+  footer .lastcontainer {
+    flex-direction: column;
   }
-  footer .lastcontainer .sec{
-      margin-right: 0;
-      margin-bottom: 40px;
+  footer .lastcontainer .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
   }
-  footer .lastcontainer .sec.aboutus,.quicklinks,.contactus{
-      width: 100%;
+  footer .lastcontainer .sec.aboutus,
+  .quicklinks,
+  .contactus {
+    width: 100%;
+  }
+  .copyrights {
+    padding: 8px 40px;
+  }
+}
+@media (max-width: 360px) {
+  footer {
+    padding: 10px;
+  }
+  footer .lastcontainer {
+    flex-direction: column;
+  }
+  footer .lastcontainer .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  footer .lastcontainer .sec.aboutus,
+  .quicklinks,
+  .contactus {
+    width: 100%;
   }
 }

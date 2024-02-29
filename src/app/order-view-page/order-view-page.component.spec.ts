@@ -12,21 +12,26 @@ describe('OrderViewPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OrderViewPageComponent, NavbarComponent, FooterpartComponent,CopyrightsComponent ],
-      imports: [ HttpClientTestingModule ],
+      declarations: [
+        OrderViewPageComponent,
+        NavbarComponent,
+        FooterpartComponent,
+        CopyrightsComponent,
+      ],
+      imports: [HttpClientTestingModule],
       providers: [
         // Provide a mock ActivatedRoute
         {
           provide: ActivatedRoute,
           useValue: {
             params: {
-              subscribe: (fn: (value: any) => void) => fn({ check: 'your-check-value' }) // Provide your parameter value
-            }
-          }
-        }
-      ]
-    })
-    .compileComponents();
+              subscribe: (fn: (value: any) => void) =>
+                fn({ check: 'your-check-value' }), // Provide your parameter value
+            },
+          },
+        },
+      ],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(OrderViewPageComponent);
     component = fixture.componentInstance;

@@ -10,19 +10,19 @@
     <div class="login1">
       <div class="login">
         <a id="Login" routerLink="/login" (click)="capturePreviousUrl()" *ngIf="!authService.isLoggedIn()">Login</a>
-        <div class="profile"*ngIf="authService.isLoggedIn()">
+        <div class="profile" *ngIf="authService.isLoggedIn()">
           <span (click)="toggleMenu()"><i class="fa-solid fa-user"></i></span>
-            <div class="sub-menu"  [class.open-menu]="isMenuOpen" id="menu">
-              <div class="menu">
-                <div class="user">
-                  <p>{{user.username}}</p>
-                  <p routerLink="/userorder">My Bookings</p>
-                </div>
-                <div class="logout">
-                 <p  (click)="logout()">Logout&nbsp;<i class="fa-solid fa-right-from-bracket"></i></p>
-                </div>
+          <div class="sub-menu" [class.open-menu]="isMenuOpen" id="menu">
+            <div class="menu">
+              <div class="user">
+                <p>{{user.username}}</p>
+                <p routerLink="/userorder">My Bookings</p>
+              </div>
+              <div class="logout">
+                <p (click)="logout()">Logout&nbsp;<i class="fa-solid fa-right-from-bracket"></i></p>
               </div>
             </div>
+          </div>
 
         </div>
       </div>
@@ -40,9 +40,9 @@
     <div class="login1">
       <div class="login">
         <a id="Login" routerLink="/login" (click)="capturePreviousUrl()" *ngIf="!authService.isLoggedIn()">Login</a>
-        <div class="profile"*ngIf="authService.isLoggedIn()">
+        <div class="profile" *ngIf="authService.isLoggedIn()">
           <div class="logout">
-           <a  (click)="logout()">Logout&nbsp;<i class="fa-solid fa-right-from-bracket"></i></a>
+            <a (click)="logout()">Logout&nbsp;<i class="fa-solid fa-right-from-bracket"></i></a>
           </div>
         </div>
       </div>

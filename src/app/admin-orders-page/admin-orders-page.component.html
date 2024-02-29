@@ -9,26 +9,26 @@
     <p>No pending Bookings</p><br>
   </div>
   <div class="bookingDetails" *ngFor="let booking of bookings ">
-  <div class="content-section">
-    <div class="card">
-      <div class="image">
-      <img [src]="booking.carinfo.images" alt="Car Brand">
-    </div>
-     <div class="content">
-      <h2>{{ booking.carinfo.carname }}</h2>
-      <div class="card-info">
-<div class="user">
-  <span>Booking ID:&nbsp;{{booking.id}}</span>
-        <span >Pickup date & time:&nbsp;{{booking.formDetails.pickupDate}}</span>
-      <span >Drop-off date & time:&nbsp;{{booking.formDetails.dropoffDate}}</span>
-      <span class="status">Status: {{ booking.status }}</span><br><br>
+    <div class="content-section">
+      <div class="card">
+        <div class="image">
+          <img [src]="booking.carinfo.images" alt="Car Brand">
+        </div>
+        <div class="content">
+          <h2>{{ booking.carinfo.carname }}</h2>
+          <div class="card-info">
+            <div class="user">
+              <span>Booking ID:&nbsp;{{booking.id}}</span>
+              <span>Pickup date & time:&nbsp;{{booking.formDetails.pickupDate}}</span>
+              <span>Drop-off date & time:&nbsp;{{booking.formDetails.dropoffDate}}</span>
+              <span class="status">Status: {{ booking.status }}</span><br><br>
 
-  </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="view" routerLink="/confirmpage/{{booking.id}}">View</button>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="card-footer">
-    <button class="view"routerLink="/confirmpage/{{booking.id}}">View</button>
-     </div>
-</div>
-</div>
   </div>

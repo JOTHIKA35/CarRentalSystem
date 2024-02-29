@@ -4,13 +4,12 @@ import { Observable, interval, startWith, switchMap } from 'rxjs';
 import { environment } from '../environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductsService {
-
   private apiUrl = environment.apiUrl;
 
-  constructor(private client: HttpClient) { }
+  constructor(private client: HttpClient) {}
 
   carlist() {
     return this.client.get(`${this.apiUrl}/carbrands`);

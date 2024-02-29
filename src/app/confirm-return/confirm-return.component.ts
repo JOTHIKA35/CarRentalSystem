@@ -5,35 +5,39 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-confirm-return',
   templateUrl: './confirm-return.component.html',
-  styleUrls: ['./confirm-return.component.css']
+  styleUrls: ['./confirm-return.component.css'],
 })
 export class ConfirmReturnComponent {
   bookings: any[] = [];
-  searchFor:any="";
-  bookingdetail:any="";
+  searchFor: any = '';
+  bookingdetail: any = '';
 
-  constructor(private adminService: AdminService,private route:ActivatedRoute,private router:Router) { }
+  constructor(
+    private adminService: AdminService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.fetchBookings();
   }
 
   fetchBookings(): void {
-    this.adminService.getBookings().subscribe(bookings => {
-        if (bookings) {
-          this.bookings = bookings;
+    this.adminService.getBookings().subscribe((bookings) => {
+      if (bookings) {
+        this.bookings = bookings;
+      }
+      this.route.params.subscribe((paramdata) => {
+        this.searchFor = paramdata['check'];
+        for (let bookingdetails of this.bookings) {
+          if (bookingdetails.id == this.searchFor) {
+            this.bookingdetail = bookingdetails;
+            break;
+          }
         }
-          this.route.params.subscribe(paramdata=>{
-            this.searchFor=paramdata['check'];
-            for(let bookingdetails of this.bookings){
-              if(bookingdetails.id==this.searchFor){
-                this.bookingdetail=bookingdetails;
-                break;
-              }
-            }
-          })
-      })
-    }
+      });
+    });
+  }
   // confirmBooking(bookingId: string, carId: number): void {
   //   this.adminService.updateBookingStatus(bookingId, 'Confirmed', 'Confirmed').subscribe(() => {
   //     this.adminService.updateCarDetailsDisableStatus(carId).subscribe(() => {
@@ -43,7 +47,7 @@ export class ConfirmReturnComponent {
   //     });
   //   });
   // }
-  
+
   // cancelBooking(bookingId: string, carId: number): void {
   //   this.adminService.updateBookingStatus(bookingId, 'Cancelled', 'Cancelled').subscribe(() => {
   //     this.adminService.updateCarDetailsEnableStatus(carId).subscribe(() => {
@@ -54,11 +58,13 @@ export class ConfirmReturnComponent {
   //   });
   // }
   returnBooking(bookingId: string, carId: number): void {
-    this.adminService.updateBookingStatus(bookingId, 'Expired', 'Expired').subscribe(() => {
-      this.adminService.updateCarDetailsEnableStatus(carId).subscribe(() => {
-        this.fetchBookings();
-        this.router.navigate(['/admin-bookings']);
+    this.adminService
+      .updateBookingStatus(bookingId, 'Expired', 'Expired')
+      .subscribe(() => {
+        this.adminService.updateCarDetailsEnableStatus(carId).subscribe(() => {
+          this.fetchBookings();
+          this.router.navigate(['/admin-bookings']);
+        });
       });
-    });
   }
 }

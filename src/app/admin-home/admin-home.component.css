@@ -1,4 +1,4 @@
-.Dashboard{
+.Dashboard {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -8,22 +8,21 @@
   margin-left: 8%;
   /* flex-direction: column; */
 }
-.Dashboard p{
+.Dashboard p {
   padding: 60px;
   font-size: 20px;
   margin-top: 10%;
-  border: 1px solid rgb(1, 35, 58) ;
+  border: 1px solid rgb(1, 35, 58);
   border-radius: 10px;
-  background:  rgba(180, 225, 255, 0.427);
-  columns: rgb(1, 35, 58) ;
+  background: rgba(180, 225, 255, 0.427);
+  columns: rgb(1, 35, 58);
 }
-span{
+span {
   font-size: 30px;
-padding: 8px 15px;
-  background-color:rgb(1, 35, 58)  ;
+  padding: 8px 15px;
+  background-color: rgb(1, 35, 58);
   border-radius: 50%;
   color: #ffffff;
-
 }
 /* img{
   margin-top: 30px;

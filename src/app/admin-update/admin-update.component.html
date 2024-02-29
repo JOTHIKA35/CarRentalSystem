@@ -1,143 +1,159 @@
 <app-admin-navbar></app-admin-navbar>
-  <div class=carform><div class="container">
+<div class=carform>
+  <div class="container">
     <div class="heading">Update Car Details</div>
-  <form>
-    <div class="form firstpage">
-      <div class="car details">
-        <div class="input" *ngIf="Details">
-          <div class="input-box">
+    <form>
+      <div class="form firstpage">
+        <div class="car details">
+          <div class="input" *ngIf="Details">
+            <div class="input-box">
 
-            <input type="number" [(ngModel)]="Details.id" name="id" placeholder="Enter Car Id" required>
-          </div>
-          <div class="input-box">
+              <input type="number" [(ngModel)]="Details.id" name="id" placeholder="Enter Car Id" required>
+            </div>
+            <div class="input-box">
 
-            <input type="text"  [(ngModel)]="Details.carname" name="carname" placeholder="Enter Car Name" required>
-          </div>
-          <div class="input-box">
+              <input type="text" [(ngModel)]="Details.carname" name="carname" placeholder="Enter Car Name" required>
+            </div>
+            <div class="input-box">
 
-            <input type="text"  [(ngModel)]="Details.color" name="color" placeholder="Enter Car Color" required>
-          </div>
-          <div class="input-box">
+              <input type="text" [(ngModel)]="Details.color" name="color" placeholder="Enter Car Color" required>
+            </div>
+            <div class="input-box">
 
-            <input type="number"  [(ngModel)]="Details.price" name="price" placeholder="Enter Rent Price" required>
-          </div>
-          <div class="input-box">
+              <input type="number" [(ngModel)]="Details.price" name="price" placeholder="Enter Rent Price" required>
+            </div>
+            <div class="input-box">
 
-            <input type="text"  [(ngModel)]="Details.type" name="type" placeholder="Enter High/Low Price" required>
+              <input type="text" [(ngModel)]="Details.type" name="type" placeholder="Enter High/Low Price" required>
 
-          </div>
-          <div class="input-box">
+            </div>
+            <div class="input-box">
 
-            <input type="text"  [(ngModel)]="Details.Fuel" name="Fuel" placeholder="Enter Fuel Type" required>
+              <input type="text" [(ngModel)]="Details.Fuel" name="Fuel" placeholder="Enter Fuel Type" required>
 
-          </div>
-          <div class="input-box">
+            </div>
+            <div class="input-box">
 
-            <input type="number"  [(ngModel)]="Details.seats" name="seats" placeholder="Enter no of Seats" required>
+              <input type="number" [(ngModel)]="Details.seats" name="seats" placeholder="Enter no of Seats" required>
 
-          </div>
-          <div class="input-box">
+            </div>
+            <div class="input-box">
 
-            <input type="text"   [(ngModel)]="Details.Mileage" name="Mileage" placeholder="Enter Milegae" required>
-          </div>
-          <div class="input-box">
+              <input type="text" [(ngModel)]="Details.Mileage" name="Mileage" placeholder="Enter Milegae" required>
+            </div>
+            <div class="input-box">
 
-            <input type="number" [(ngModel)]="Details.tankcapacity" name="tankcapacity" placeholder="Enter Tankcapacity of the car" required>
-          </div>
-          <div class="input-box">
+              <input type="number" [(ngModel)]="Details.tankcapacity" name="tankcapacity"
+                placeholder="Enter Tankcapacity of the car" required>
+            </div>
+            <div class="input-box">
 
-            <input type="text"  [(ngModel)]="Details.images" name="images" placeholder="Enter the Image Url" required>
-          </div>
-        <!-- </div> -->
-      <!-- </div> -->
-      <!-- <div class="car info">
+              <input type="text" [(ngModel)]="Details.images" name="images" placeholder="Enter the Image Url" required>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="car info">
         <span class="title">Car Pictures and Features</span> -->
-        <!-- <div class="input"> -->
-          <div class="input-box">
+            <!-- <div class="input"> -->
+            <div class="input-box">
 
-            <input type="text"  [(ngModel)]="Details.mainImage" name="mainImage" placeholder="Enter Image Url" required>
+              <input type="text" [(ngModel)]="Details.mainImage" name="mainImage" placeholder="Enter Image Url"
+                required>
+            </div>
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.slideImage1" name="slideImage1"
+                placeholder="Enter sliderImage picture Url" required>
+            </div>
+
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.slideImage2" name="slideImage2"
+                placeholder="Enter sliderImage picture Url" required>
+            </div>
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.slideImage3" name="slideImage3"
+                placeholder="Enter sliderImage picture Url" required>
+            </div>
+
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.slideImage4" name="slideImage4"
+                placeholder="Enter sliderImage picture Url" required>
+            </div>
+
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.slideImage5" name="slideImage5"
+                placeholder="Enter sliderImage picture Url" required>
+            </div>
+
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.slideImage6" name="slideImage6"
+                placeholder="Enter sliderImage picture Url" required>
+            </div>
+
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.slideImage7" name="slideImage7"
+                placeholder="Enter sliderImage picture Url" required>
+            </div>
+
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.slideImage8" name="slideImage8"
+                placeholder="Enter sliderImage picture Url" required>
+            </div>
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.feature1" name="feature1" placeholder="Enter Car Feature"
+                required>
+            </div>
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.feature2" name="feature2" placeholder="Enter Car Feature"
+                required>
+            </div>
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.feature3" name="feature3" placeholder="Enter Car Feature"
+                required>
+            </div>
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.feature4" name="feature4" placeholder="Enter Car Feature"
+                required>
+            </div>
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.feature5" name="feature5" placeholder="Enter Car Feature"
+                required>
+            </div>
+            <div class="input-box">
+
+              <input type="text" [(ngModel)]="Details.location" name="location" placeholder="Enter Car Feature"
+                required>
+            </div>
           </div>
           <div class="input-box">
-
-            <input type="text"   [(ngModel)]="Details.slideImage1" name="slideImage1" placeholder="Enter sliderImage picture Url" required>
+            <label>Disable</label><br>
+            <select name="disable" id="disable" [(ngModel)]="Details.disable">
+              <option [ngValue]="true">true</option>
+              <option [ngValue]="false">false</option>
+            </select>
           </div>
-
-          <div class="input-box">
-
-            <input type="text"  [(ngModel)]="Details.slideImage2" name="slideImage2" placeholder="Enter sliderImage picture Url" required>
-          </div>
-          <div class="input-box">
-
-            <input type="text"   [(ngModel)]="Details.slideImage3" name="slideImage3" placeholder="Enter sliderImage picture Url" required>
-          </div>
-
-          <div class="input-box">
-
-            <input type="text"  [(ngModel)]="Details.slideImage4" name="slideImage4" placeholder="Enter sliderImage picture Url" required>
-          </div>
-
-          <div class="input-box">
-
-            <input type="text" [(ngModel)]="Details.slideImage5" name="slideImage5" placeholder="Enter sliderImage picture Url" required>
-          </div>
-
-          <div class="input-box">
-
-            <input type="text" [(ngModel)]="Details.slideImage6" name="slideImage6"  placeholder="Enter sliderImage picture Url" required>
-          </div>
-
-          <div class="input-box">
-
-            <input type="text" [(ngModel)]="Details.slideImage7" name="slideImage7"  placeholder="Enter sliderImage picture Url" required>
-          </div>
-
-          <div class="input-box">
-
-            <input type="text" [(ngModel)]="Details.slideImage8" name="slideImage8" placeholder="Enter sliderImage picture Url" required>
-          </div>
-          <div class="input-box">
-
-            <input type="text" [(ngModel)]="Details.feature1" name="feature1" placeholder="Enter Car Feature" required>
-          </div>
-          <div class="input-box">
-
-            <input type="text"  [(ngModel)]="Details.feature2" name="feature2" placeholder="Enter Car Feature" required>
-          </div>
-          <div class="input-box">
-
-            <input type="text"  [(ngModel)]="Details.feature3" name="feature3"placeholder="Enter Car Feature" required>
-          </div>
-          <div class="input-box">
-
-            <input type="text"  [(ngModel)]="Details.feature4" name="feature4" placeholder="Enter Car Feature" required>
-          </div>
-          <div class="input-box">
-
-            <input type="text"  [(ngModel)]="Details.feature5" name="feature5" placeholder="Enter Car Feature" required>
-          </div>
-          <div class="input-box">
-
-            <input type="text" [(ngModel)]="Details.location" name="location" placeholder="Enter Car Feature" required>
+          <div class="button">
+            <button class="firstbutton">
+              <span routerLink="/view" class="btn">Cancel</span>
+            </button>
+            <button class="firstbutton" (click)="update()">
+              <span class="btn">Update</span>
+            </button>
           </div>
         </div>
-        <div class="input-box">
-          <label>Disable</label><br>
-          <select name="disable" id="disable" [(ngModel)]="Details.disable">
-            <option [ngValue]="true">true</option>
-            <option [ngValue]="false">false</option>
-          </select>
-        </div>
-        <div class="button">
-        <button class="firstbutton">
-          <span routerLink="/view" class="btn">Cancel</span>
-       </button>
-       <button class="firstbutton" (click)="update()">
-        <span class="btn">Update</span>
-     </button>
       </div>
-      </div>
-    </div>
-  </form>
+    </form>
   </div>
-  </div>
-
+</div>

@@ -1,41 +1,41 @@
 <app-admin-navbar></app-admin-navbar>
 <div class="content">
-<div class="table">
-<div class="Heading">
-  <h1>Car Details</h1>
-  <button routerLink="/addcars" class="cars">+ Add New Cars</button>
-</div>
+  <div class="table">
+    <div class="Heading">
+      <h1>Car Details</h1>
+      <button routerLink="/addcars" class="cars">+ Add New Cars</button>
+    </div>
 
-<div class="table_section">
-<table>
-  <thead>
-    <tr>
-      <th>Car Image</th>
-      <th>Car Name</th>
-      <th>Mileage</th>
-      <th>Rent Price</th>
-      <th>Color</th>
-      <th>Fuel Type</th>
-      <th>No of Seats</th>
-      <th>Tank Capacity</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody *ngFor="let Details of cardetails">
-    <tr>
-       <td> <img src="{{Details.images}}"></td>
-       <td>{{Details.carname}}</td>
-       <td>{{Details.Mileage}}</td>
-       <td>{{Details.price}}</td>
-       <td>{{Details.color}}</td>
-       <td>{{Details.Fuel}}</td>
-       <td>{{Details.seats}}</td>
-       <td>{{Details.tankcapacity}}</td>
-       <td><a routerLink="/update/{{Details.id}}"><i class="fa-solid fa-pen-to-square"></i></a><span (click)="deleteproduct(Details.id)"><i class="fa-sharp fa-solid fa-trash"></i></span></td>
-      </tr>
-  </tbody>
-</table>
+    <div class="table_section">
+      <table>
+        <thead>
+          <tr>
+            <th>Car Image</th>
+            <th>Car Name</th>
+            <th>Mileage</th>
+            <th>Rent Price</th>
+            <th>Color</th>
+            <th>Fuel Type</th>
+            <th>No of Seats</th>
+            <th>Tank Capacity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let Details of cardetails">
+          <tr>
+            <td> <img src="{{Details.images}}"></td>
+            <td>{{Details.carname}}</td>
+            <td>{{Details.Mileage}}</td>
+            <td>{{Details.price}}</td>
+            <td>{{Details.color}}</td>
+            <td>{{Details.Fuel}}</td>
+            <td>{{Details.seats}}</td>
+            <td>{{Details.tankcapacity}}</td>
+            <td><a routerLink="/update/{{Details.id}}"><i class="fa-solid fa-pen-to-square"></i></a><span
+                (click)="deleteproduct(Details.id)"><i class="fa-sharp fa-solid fa-trash"></i></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-

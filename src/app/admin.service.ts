@@ -4,12 +4,12 @@ import { Observable, interval, startWith, switchMap } from 'rxjs';
 import { environment } from '../environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AdminService {
   private apiUrl = environment.apiUrl;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   // Adding product
   addcardetails(data: any): Observable<any> {
@@ -55,19 +55,28 @@ export class AdminService {
   }
 
   // Update booking status and user status
-  updateBookingStatus(bookingId: string, status: string, userStatus: string): Observable<any> {
-    return this.http.patch<any>(`${this.apiUrl}/bookings/${bookingId}`, { status, userStatus });
+  updateBookingStatus(
+    bookingId: string,
+    status: string,
+    userStatus: string
+  ): Observable<any> {
+    return this.http.patch<any>(`${this.apiUrl}/bookings/${bookingId}`, {
+      status,
+      userStatus,
+    });
   }
 
   // Update car details disable status
   updateCarDetailsDisableStatus(carId: number): Observable<any> {
-    return this.http.patch<any>(`${this.apiUrl}/cardetails/${carId}`, { disable: true });
+    return this.http.patch<any>(`${this.apiUrl}/cardetails/${carId}`, {
+      disable: true,
+    });
   }
 
   // Update car details enable status
   updateCarDetailsEnableStatus(carId: number): Observable<any> {
-    return this.http.patch<any>(`${this.apiUrl}/cardetails/${carId}`, { disable: false });
+    return this.http.patch<any>(`${this.apiUrl}/cardetails/${carId}`, {
+      disable: false,
+    });
   }
-
-  
 }

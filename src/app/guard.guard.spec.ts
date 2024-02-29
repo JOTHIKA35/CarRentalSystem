@@ -7,7 +7,7 @@ describe('GuardGuard', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule]
+      imports: [HttpClientModule],
     });
     guard = TestBed.inject(GuardGuard);
   });

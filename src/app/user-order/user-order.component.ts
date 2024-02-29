@@ -6,7 +6,7 @@ import { LoginUrlService } from '../login-url.service';
 @Component({
   selector: 'app-user-order',
   templateUrl: './user-order.component.html',
-  styleUrls: ['./user-order.component.css']
+  styleUrls: ['./user-order.component.css'],
 })
 export class UserOrderComponent {
   bookings: any[] = [];
@@ -14,12 +14,12 @@ export class UserOrderComponent {
 
   ngOnInit() {
     this.fetchBookings();
-}
-fetchBookings(){
-  this.authService.getBookingsForUser().subscribe(bookings => {
-    if (bookings) {
-      this.bookings = bookings;
-    }
-  });
-}
+  }
+  fetchBookings() {
+    this.authService.getBookingsForUser().subscribe((bookings) => {
+      if (bookings) {
+        this.bookings = bookings;
+      }
+    });
+  }
 }
